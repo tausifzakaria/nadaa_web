@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="ar">
+{% load static %}
+
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title  -->
+  <title>Nadaa | Information Technology
+  </title>
+  <meta name="description" content="Nadaa For Information Technology" />
+
+  <!--Plugins Styles-->
+  {% comment %}
+  <link rel="stylesheet" href='{% static "src/plugins/aos/dist/aos.css" %}' /> {% endcomment %}
+  <link rel="stylesheet" href='{% static "src/plugins/lightgallery.js/dist/css/lightgallery.min.css" %}' />
+  {% comment %}
+  <link rel="stylesheet" href='{% static "src/plugins/flickity/dist/flickity.min.css" %}' /> {% endcomment %}
+
+  <!--Styles-->
+  <link rel="stylesheet" href='{% static "src/css/theme.css" %}' />
+
+  <!-- Css Optimize -->
+
+  <!-- PWA Optimize -->
+  <link rel="manifest" href="{% static 'src/js/pwa/manifest.json' %}" />
+
+  <meta name="theme-color" content="#5b2be0" />
+  <link rel="apple-touch-icon" href='{% static "img/logo-white.png" %}' />
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+
+  <!-- Favicon  -->
+  <link rel="icon" href='{% static "img/icon.png" %}' />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70CK5Q0F1Z"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-70CK5Q0F1Z');
+  </script>
+</head>
+<style>
+  .modal-dialog {
+    min-width: 100% !important;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modal-content {
+    width: 100% !important;
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+</style>
+
+<body id="top">
+  <div id="google_translate_element"></div>
+  <!--Skippy-->
+  <a id="skippy" class="visually-hidden-focusable" href="#content">
+    <div class="container">
+      <span class="skiplink-text">Skip to main content</span>
+    </div>
+  </a>
+
+  <div class="d-block d-md-none mobile-fixed-box fixed-bottom">
+    <div class="row align-items-center mb-n1">
+      <div class="col col-6 btn btn-success border px-2 py-3" style="background: #5bbc2e; text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" viewBox="0 0 512 512">
+          <path
+            d="M414.73,97.1A222.14,222.14,0,0,0,256.94,32C134,32,33.92,131.58,33.87,254A220.61,220.61,0,0,0,63.65,365L32,480l118.25-30.87a223.63,223.63,0,0,0,106.6,27h.09c122.93,0,223-99.59,223.06-222A220.18,220.18,0,0,0,414.73,97.1ZM256.94,438.66h-.08a185.75,185.75,0,0,1-94.36-25.72l-6.77-4L85.56,427.26l18.73-68.09-4.41-7A183.46,183.46,0,0,1,71.53,254c0-101.73,83.21-184.5,185.48-184.5A185,185,0,0,1,442.34,254.14C442.3,355.88,359.13,438.66,256.94,438.66ZM358.63,300.47c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54,2.78-14.4,18-17.65,21.75-6.5,4.16-12.07,1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56,2.44-11.32c2.51-2.49,5.57-6.48,8.36-9.72s3.72-5.56,5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53,20.53,0,0,0-14.86,6.94c-5.11,5.56-19.51,19-19.51,46.28s20,53.68,22.76,57.38,39.3,59.73,95.21,83.76a323.11,323.11,0,0,0,31.78,11.68c13.35,4.22,25.5,3.63,35.1,2.2,10.71-1.59,33-13.42,37.63-26.38s4.64-24.06,3.25-26.37S364.21,303.24,358.63,300.47Z"
+            style="fill-rule:evenodd" />
+        </svg>
+        <a alt='{{title}}'
+          href=http://wa.me/+919833664934?text=Hi%20There,%0AI%20saw%20NadaaIT%20website%20and%20want%20to%20know%20more%20about%20it
+          id="Site Visit" class="cta-link text-center text-white icon-a"><span><i class="fab fa-whatsapp fa-lg "></i>
+            WhatsApp</span></a>
+      </div>
+      <div class="col col-6 bg-primary border px-2 py-3 text-center text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" viewBox="0 0 512 512">
+          <path
+            d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z"
+            style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+        </svg>
+        <a alt='{{title}}' href="tel:9833664934/" id="Site Visit" class="cta-link text-white"
+          title="Request a Site Visit"> 7700909295</a>
+      </div>
+    </div>
+  </div>
+  <!-- progress scroll -->
+  <progress id="progress-bar" class="progress-one" max="100">
+    <span class="progress-container">
+      <span class="progress-bar"></span>
+    </span>
+  </progress>
+
+  <!-- ========== { HEADER }==========  -->
+  <header>
+    <!-- Navbar -->
+    <nav class="
+          main-nav
+          navbar navbar-expand-lg
+          hover-navbar
+          dark-to-light
+          fixed-top
+          navbar-dark
+        ">
+      <div class="container">
+        <a class="navbar-brand main-logo" href="#">
+
+          <img class="logo-light" src='{% static "img/logo-white.png" %}' alt="LOGO" />
+          <img class="logo-dark" src='{% static "img/logo.png" %}' alt="LOGO" />
+        </a>
+
+        <!-- navbar toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo"
+          aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- collapse menu -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#top" role="button" aria-expanded="false" id="navbarDropdown1">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#features" role="button" aria-expanded="false" id="navbarDropdown2">
+                Features
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#hiw" role="button" aria-expanded="false" id="navbarDropdown3">
+                How It Works
+              </a>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link" href="#price" role="button" aria-expanded="false" id="navbarDropdown4">
+                Pricing
+              </a>
+            </li> -->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#faqs" role="button" aria-expanded="false" id="navbarDropdown5">
+                FAQs
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#contactteam" role="button" aria-expanded="false" id="navbarDropdown6">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+          <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
+            <a class="btn btn-warning btn-sm" href="{% url 'index' %}">
+              Arabic <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512">
+                <path
+                  d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z" />
+              </svg>
+            </a>
+          </div>
+          <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
+            <a class="btn btn-warning btn-sm" target="_blank" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              rel="noopener" href="#price">
+              {% comment %} <svg xmlns="https://www.w3.org/2000/svg" class="me-1" width="1.2rem" height="1.2rem"
+                fill="currentColor" viewBox="0 0 512 512">
+                <circle cx="176" cy="416" r="16" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+                <circle cx="400" cy="416" r="16" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+                <polyline points="48 80 112 80 160 352 416 352" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+                <path d="M160,288H409.44a8,8,0,0,0,7.85-6.43l28.8-144a8,8,0,0,0-7.85-9.57H128" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+              </svg> {% endcomment %}
+              Any Query ?
+            </a>
+          </div>
+        </div>
+        <!-- end collapse menu -->
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
+  <!-- end header -->
+
+  <!-- =========={ MAIN }==========  -->
+  <main id="content">
+    <!-- =========={ HERO }==========  -->
+    <div id="hero" class="section bg-gradient-primary py-8 py-lg-9 overflow-hidden">
+      <!-- background overlay -->
+      <div class="overlay bg-gradient-primary opacity-90 z-index-n1"></div>
+
+      <!-- rocket moving up animation -->
+      <div class="particle">
+        <div class="
+              particle-move-up
+              d-none d-lg-block
+              particle-move-up-1
+              text-light
+              z-index-n1
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="2rem" height="2rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up particle-move-up-2
+              text-light
+              z-index-n1
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="1rem" height="1rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up
+              d-none d-sm-block
+              particle-move-up-3
+              text-light
+              z-index-n1
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="1.2rem" height="1.2rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up
+              d-none d-xl-block
+              particle-move-up-4
+              text-light
+              z-index-n1
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="1rem" height="1rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up
+              d-none d-sm-block
+              particle-move-up-5
+              text-light
+              z-index-n1
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="1.2rem" height="1.2rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up
+              border-success
+              text-light
+              particle-move-up-6
+              z-index-n1
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="2rem" height="2rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up particle-move-up-7
+              z-index-n1
+              text-light
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="1.2rem" height="1.2rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up particle-move-up-8
+              z-index-n1
+              text-light
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="1.2rem" height="1.2rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+        <div class="
+              particle-move-up particle-move-up-9
+              z-index-n1
+              text-light
+              opacity-60
+            ">
+          <svg xmlns="https://www.w3.org/2000/svg" class="rotate-315" width="2rem" height="2rem" fill="currentColor"
+            viewBox="0 0 512 512">
+            <path
+              d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+            <path class="text-warning" fill="currentColor"
+              d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+              style="
+                  fill: none;
+                  stroke: currentColor;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                " />
+          </svg>
+        </div>
+      </div>
+
+      <!-- scribble -->
+      <figure class="scribble scale-4 opacity-10 top-50 start-0 z-index-n1" data-aos="fade-up-right"
+        data-aos-delay="300">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+      <!-- scribble -->
+      <figure class="scribble scale-5 opacity-10 top-50 start-0 z-index-n1" data-aos="fade-up-right"
+        data-aos-delay="200">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+      <!-- scribble -->
+      <figure class="scribble scale-6 opacity-10 top-50 start-0 z-index-n1" data-aos="fade-up-right"
+        data-aos-delay="100">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+      <!-- scribble -->
+      <figure class="scribble scale-7 opacity-10 top-50 start-0 z-index-n1" data-aos="fade-up-right">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+
+
+      <div class="container">
+        <!-- row -->
+        <div class="row justify-content-center">
+          <!-- hero content -->
+          <div class="col-md-9 col-lg-6 align-self-center pe-lg-5" data-aos="flip-up">
+            <div class="text-center text-lg-start mt-4 mt-lg-0">
+              <div class="mb-5">
+                <h1 class="display-5 fw-bold text-white mb-3">
+                  {{banner.banner_header_english}}
+                </h1>
+                <p class="lead text-light">
+                  {{banner.banner_contnet_english}}
+                </p>
+              </div>
+              <a class="btn btn-white hover-button-up" href="#about">
+                <!-- <i class="fas fa-desktop"></i> -->
+                <svg class="bi bi-book me-2" width="1.2rem" height="1.2rem" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="https://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z"
+                    clip-rule="evenodd"></path>
+                  <path fill-rule="evenodd"
+                    d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0115 2.82z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Know More
+              </a>
+            </div>
+          </div>
+          <!-- hero image -->
+          <div class="col-md-9 col-lg-6 align-self-center">
+            <div class="px-3 px-sm-7 px-md-2 px-xl-7 mt-5 mt-lg-0 mb-n9" data-aos="fade-up" data-aos-delay="100">
+              <img class="img-fluid animated-up-down" src='{% static "src/img-min/svg/start_up.svg" %}'
+                alt="images title" />
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- waves start -->
+      <figure class="waves-bottom-center text-light mb-lg-n4 z-index-n1">
+        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path class="opacity-20 translate-top-2" fill="currentColor" fill-opacity="1"
+            d="M0,160L60,186.7C120,213,240,267,360,245.3C480,224,600,128,720,106.7C840,85,960,139,1080,149.3C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+          </path>
+          <path class="opacity-30 translate-top-1" fill="currentColor" fill-opacity="1"
+            d="M0,160L60,186.7C120,213,240,267,360,245.3C480,224,600,128,720,106.7C840,85,960,139,1080,149.3C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+          </path>
+          <path fill="currentColor" fill-opacity="1"
+            d="M0,160L60,186.7C120,213,240,267,360,245.3C480,224,600,128,720,106.7C840,85,960,139,1080,149.3C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+          </path>
+        </svg>
+      </figure>
+    </div>
+    <!-- end hero -->
+
+    <!-- =========={ FEATURES }==========  -->
+    <div id="features" class="section pt-5 pb-4 pb-md-5 bg-light">
+      <div class="container">
+        <div class="position-relative">
+          <!-- scribble -->
+          <figure class="
+                scribble
+                scale-2
+                d-none d-md-block
+                top-0
+                end-0
+                mt-md-n4 mt-lg-n7
+                me-lg-7
+                z-index-n1
+              ">
+            <svg class="text-secondary opacity-90" width="76" height="72" viewBox="0 0 193.000000 184.000000"
+              xmlns="https://www.w3.org/2000/svg">
+              <g transform="translate(0.000000,184.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+                <path d="M633 1723 c-3 -10 -19 -51 -35 -91 -33 -84 -34 -103 -10 -124 28 -24
+                53 -29 88 -18 35 12 55 48 48 91 -2 13 -6 46 -9 72 -9 69 -65 117 -82 70z"></path>
+                <path d="M1330 1613 c-27 -54 -49 -107 -48 -117 5 -37 47 -55 111 -47 80 10
+                84 16 69 103 -15 85 -45 158 -66 158 -9 0 -36 -40 -66 -97z"></path>
+                <path d="M973 1513 c-3 -10 -21 -54 -39 -98 -40 -95 -41 -109 -12 -129 29 -20
+                143 -22 151 -3 6 16 1 48 -19 139 -20 86 -65 137 -81 91z"></path>
+                <path d="M261 1328 c-5 -13 -21 -49 -35 -81 -32 -72 -33 -92 -2 -113 32 -20
+                134 -10 144 14 10 28 -27 145 -55 174 -32 34 -41 35 -52 6z"></path>
+                <path d="M605 1306 c-8 -19 -20 -66 -26 -106 -15 -91 -6 -103 79 -103 32 0 64
+                3 71 8 19 11 9 72 -23 142 -46 100 -77 118 -101 59z"></path>
+                <path d="M1319 1253 c-7 -15 -29 -66 -50 -111 -22 -46 -39 -89 -39 -96 0 -7
+                11 -23 25 -36 22 -20 27 -22 55 -10 16 7 39 10 49 7 11 -3 28 1 37 8 16 11 17
+                21 6 111 -16 129 -57 192 -83 127z"></path>
+                <path d="M1680 1058 c-5 -13 -25 -63 -45 -113 -20 -49 -38 -95 -41 -102 -5
+                -10 9 -27 48 -59 22 -18 124 -27 148 -14 18 9 21 18 17 43 -12 70 -48 204 -63
+                235 -20 38 -50 42 -64 10z"></path>
+                <path d="M903 901 c-27 -81 -28 -92 -16 -116 9 -17 20 -25 30 -21 8 3 29 6 47
+                6 18 0 41 6 51 14 17 12 18 17 6 57 -54 181 -74 191 -118 60z"></path>
+                <path d="M141 913 c-15 -30 -41 -125 -41 -153 0 -50 74 -87 114 -57 19 14 19
+                20 8 102 -11 86 -29 125 -58 125 -7 0 -17 -8 -23 -17z"></path>
+                <path d="M1324 813 c-4 -16 -17 -49 -30 -75 -28 -56 -29 -75 -6 -105 15 -20
+                23 -21 67 -15 47 7 50 9 53 38 3 35 -24 152 -40 172 -17 20 -37 14 -44 -15z"></path>
+                <path d="M537 688 c-20 -46 -37 -90 -37 -99 0 -22 26 -43 45 -35 8 3 15 1 15
+                -4 0 -15 43 -12 84 5 43 18 45 34 15 123 -19 57 -47 92 -74 92 -6 0 -28 -37
+                -48 -82z"></path>
+                <path d="M995 620 c-7 -11 -55 -186 -55 -199 0 -17 42 -51 63 -51 42 0 96 21
+                101 38 6 19 -29 135 -58 190 -16 32 -39 41 -51 22z"></path>
+                <path d="M1379 330 c-25 -77 -31 -105 -23 -118 11 -18 56 -36 116 -47 32 -6
+                36 -4 42 18 7 30 -20 180 -40 219 -10 18 -22 28 -38 28 -20 0 -27 -12 -57
+                -100z"></path>
+                <path d="M566 290 c-20 -51 -30 -113 -22 -144 7 -29 49 -46 112 -46 44 0 44 0
+                44 35 0 40 -41 149 -67 177 -26 29 -49 22 -67 -22z"></path>
+              </g>
+            </svg>
+          </figure>
+        </div>
+
+        <!-- section header -->
+        <header class="text-center mx-auto mb-5">
+          <h2 class="h3 fw-bold">Features</h2>
+          <hr class="divider my-4 mx-auto bg-warning border-warning" />
+          <p class="lead text-muted">
+            Based on in-depth research, we have developed this great solution
+            to deliver everything you are looking for, from softwares and
+            websites for your next Health Care System Project's Professional Use.
+          </p>
+        </header>
+
+        <!-- row -->
+        <div class="row text-center" id="features">
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-bootstrap"></i> -->
+                <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M461.81,53.81a4.4,4.4,0,0,0-3.3-3.39c-54.38-13.3-180,34.09-248.13,102.17a294.9,294.9,0,0,0-33.09,39.08c-21-1.9-42-.3-59.88,7.5-50.49,22.2-65.18,80.18-69.28,105.07a9,9,0,0,0,9.8,10.4l81.07-8.9a180.29,180.29,0,0,0,1.1,18.3,18.15,18.15,0,0,0,5.3,11.09l31.39,31.39a18.15,18.15,0,0,0,11.1,5.3,179.91,179.91,0,0,0,18.19,1.1l-8.89,81a9,9,0,0,0,10.39,9.79c24.9-4,83-18.69,105.07-69.17,7.8-17.9,9.4-38.79,7.6-59.69a293.91,293.91,0,0,0,39.19-33.09C427.82,233.76,474.91,110.9,461.81,53.81ZM298.66,213.67a42.7,42.7,0,1,1,60.38,0A42.65,42.65,0,0,1,298.66,213.67Z"
+                    style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                  <path
+                    d="M109.64,352a45.06,45.06,0,0,0-26.35,12.84C65.67,382.52,64,448,64,448s65.52-1.67,83.15-19.31A44.73,44.73,0,0,0,160,402.32"
+                    style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                </svg>
+              </div>
+              <h3 class="h5">Super-Fast Setup</h3>
+              <p>
+                We set up the software and website for your next Awesome project within 3 hours.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up" data-aos-delay="200">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-npm"></i> -->
+                <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z"
+                    style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-miterlimit: 10;
+                        stroke-width: 32px;
+                      " />
+                  <path
+                    d="M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z"
+                    style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-miterlimit: 10;
+                        stroke-width: 32px;
+                      " />
+                  <path d="M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                  <path d="M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                  <line x1="256" y1="48" x2="256" y2="464" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-miterlimit: 10;
+                        stroke-width: 32px;
+                      " />
+                  <line x1="464" y1="256" x2="48" y2="256" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-miterlimit: 10;
+                        stroke-width: 32px;
+                      " />
+                </svg>
+              </div>
+              <h3 class="h5">SEO Optimized</h3>
+              <p>
+                All the softwares and websites are optimized with In-App
+                SEO and our team helps you in increasing the same.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-html5"></i> -->
+                <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path d="M336,208V113a80,80,0,0,0-160,0v95" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                  <rect x="96" y="208" width="320" height="272" rx="48" ry="48" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                </svg>
+              </div>
+              <h3 class="h5">Safe and Secure</h3>
+              <p>
+                All the software and websites are made live with “SSL
+                Certificate” and operated over a secured connection
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-bootstrap"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path d="M320,96H88a40,40,0,0,0-40,40V376a40,40,0,0,0,40,40H422.73a40,40,0,0,0,40-40V239"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <polyline points="112 160 256 272 343 206.33"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <circle cx="431.95" cy="128.05" r="47.95" />
+                  <path
+                    d="M432,192a63.95,63.95,0,1,1,63.95-63.95A64,64,0,0,1,432,192Zm0-95.9a32,32,0,1,0,31.95,32A32,32,0,0,0,432,96.1Z" />
+                </svg>
+              </div>
+              <h3 class="h5">CRM And Email Integration</h3>
+              <p>
+                NadaaIT integrates the generated leads into your CRM system and also sends over an email.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-html5"></i> -->
+                <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z" />
+                </svg>
+              </div>
+              <h3 class="h5">Facebook Pixel</h3>
+              <p>
+                Seamlessly Integrate the Facebook Pixel for getting visitor
+                statistics from Facebook Ads.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-html5"></i> -->
+                <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M473.16,221.48l-2.26-9.59H262.46v88.22H387c-12.93,61.4-72.93,93.72-121.94,93.72-35.66,0-73.25-15-98.13-39.11a140.08,140.08,0,0,1-41.8-98.88c0-37.16,16.7-74.33,41-98.78s61-38.13,97.49-38.13c41.79,0,71.74,22.19,82.94,32.31l62.69-62.36C390.86,72.72,340.34,32,261.6,32h0c-60.75,0-119,23.27-161.58,65.71C58,139.5,36.25,199.93,36.25,256S56.83,369.48,97.55,411.6C141.06,456.52,202.68,480,266.13,480c57.73,0,112.45-22.62,151.45-63.66,38.34-40.4,58.17-96.3,58.17-154.9C475.75,236.77,473.27,222.12,473.16,221.48Z" />
+                </svg>
+              </div>
+              <h3 class="h5">Google Analytics</h3>
+              <p>
+                NadaaIT seamlessly integrates the Google Analytics for your Health Care System software and website.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-html5"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M320,254.27c-4.5,51-40.12,80-80.55,80s-67.34-35.82-63.45-80,37.12-80,77.55-80S323.88,210.27,320,254.27Z"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <path
+                    d="M319.77,415.77c-28.56,12-47.28,14.5-79.28,14.5-97.2,0-169-78.8-160.49-176s94.31-176,191.51-176C381,78.27,441.19,150,432.73,246c-6.31,71.67-52.11,92.32-76.09,88.07-22.56-4-41.18-24.42-37.74-63.5l8.48-96.25"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                </svg>
+              </div>
+              <h3 class="h5">Custom Domains</h3>
+              <p>
+                The software and websites are made available on your custom domain for the Health Care System Project.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up" data-aos-delay="200">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-html5"></i> -->
+                <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <path
+                    d="M430.11,347.9c-6.6-6.1-16.3-7.6-24.6-9-11.5-1.9-15.9-4-22.6-10-14.3-12.7-14.3-31.1,0-43.8l30.3-26.9c46.4-41,46.4-108.2,0-149.2-34.2-30.1-80.1-45-127.8-45-55.7,0-113.9,20.3-158.8,60.1-83.5,73.8-83.5,194.7,0,268.5,41.5,36.7,97.5,55,152.9,55.4h1.7c55.4,0,110-17.9,148.8-52.4C444.41,382.9,442,359,430.11,347.9Z"
+                    style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-miterlimit: 10;
+                        stroke-width: 32px;
+                      " />
+                  <circle cx="144" cy="208" r="32" />
+                  <circle cx="152" cy="311" r="32" />
+                  <circle cx="224" cy="144" r="32" />
+                  <circle cx="256" cy="367" r="48" />
+                  <circle cx="328" cy="144" r="32" />
+                </svg>
+              </div>
+              <h3 class="h5">Multiple Themes</h3>
+              <p>
+                You can select from a wide range of themes and colors which
+                are specially designed for Health Care System Project.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+          <div class="col-md-6 col-lg-4 px-4 px-md-3" data-aos="fade-up">
+            <!-- service block -->
+            <div class="p-4 mb-5 rounded-3 bg-white shadow-sm hover-box-up">
+              <div class="text-primary mb-3">
+                <!-- icon -->
+                <!-- <i class="fab fa-html5"></i> -->
+                <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor"
+                  viewBox="0 0 512 512">
+                  <rect x="128" y="16" width="256" height="480" rx="48" ry="48" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                  <path d="M176,16h24a8,8,0,0,1,8,8h0a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16h0a8,8,0,0,1,8-8h24" style="
+                        fill: none;
+                        stroke: currentColor;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 32px;
+                      " />
+                </svg>
+              </div>
+              <h3 class="h5">Modern And Responsive Design</h3>
+              <p>
+                NadaaIT softwares and websites give a very smooth experience on Mobile, Tablets or Large
+                Screens.
+              </p>
+            </div>
+            <!-- end service block -->
+          </div>
+
+        </div>
+        <!-- end row -->
+      </div>
+    </div>
+    <!-- End features -->
+
+    <!-- =========={ STORY }==========  -->
+    <div id="about" class="section py-6 py-md-7 bg-gradient-primary overflow-hidden">
+      <!-- scribble -->
+      <figure class="scribble scale-5 opacity-10 bottom-0 end-0 z-index-n1" data-aos="fade-left" data-aos-delay="400">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+      <!-- scribble -->
+      <figure class="scribble scale-6 opacity-10 bottom-0 end-0 z-index-n1" data-aos="fade-left" data-aos-delay="300">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+      <!-- scribble -->
+      <figure class="scribble scale-7 opacity-10 bottom-0 end-0 z-index-n1" data-aos="fade-left" data-aos-delay="200">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+      <!-- scribble -->
+      <figure class="scribble scale-8 opacity-10 bottom-0 end-0 z-index-n1" data-aos="fade-left" data-aos-delay="100">
+        <svg class="text-secondary" width="200" height="200" viewBox="0 0 200 200" xmlns="https://www.w3.org/2000/svg">
+          <path fill="currentColor"
+            d="M42.5,-66.2C57.1,-56.7,72.5,-48.4,81.1,-35.3C89.8,-22.2,91.8,-4.4,89.6,13C87.3,30.4,80.7,47.4,69.5,60.1C58.3,72.9,42.4,81.5,25.9,84.6C9.5,87.8,-7.4,85.4,-22.7,79.8C-37.9,74.1,-51.5,65.2,-60.9,53.3C-70.4,41.4,-75.8,26.6,-79,10.8C-82.1,-5,-83.1,-21.7,-77.7,-36.4C-72.4,-51,-60.7,-63.7,-46.7,-73.5C-32.7,-83.3,-16.4,-90.1,-1.2,-88.2C13.9,-86.3,27.8,-75.7,42.5,-66.2Z"
+            transform="translate(100 100)" />
+        </svg>
+      </figure>
+
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="mb-3">
+            <span class="badge bg-warning text-dark rounded">Story</span>
+          </div>
+          <div class="col-lg-6 align-self-center aos-init aos-animate" data-aos="fade-right">
+            <div class="max-box py-3">
+              <h2 class="h1 mb-3 fw-bold text-white">{{content.story_header_english}}
+              </h2>
+              <p class="lead text-light">
+                {{content.story_contnet_english}}
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 align-self-center" data-aos="fade-left">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960.000000 574.000000">
+              <!-- Clip path image -->
+              <defs>
+                <clipPath id="svgf77">
+                  <rect y="0" x="5" width="735" height="470"></rect>
+                </clipPath>
+              </defs>
+              <!-- Phone screen -->
+              <!-- <image
+                xlink:href="{% static 'src/img/EazyApp - Digital Platform for managing Health Care System Project Sales.png' %}"
+                style="width: 100%;transform: translate(20px, 42px);clip-path: inset(0 12% 0% 8%);"></image> -->
+              <!-- Phone cover -->
+              <image xlink:href="{% static 'src/img/app/device/macbook.png' %}" height="100%" width="100%"></image>
+            </svg>
+          </div>
+        </div><!-- end row -->
+      </div>
+    </div>
+    <!-- end story -->
+
+    <!-- =========={ FEATURES }==========  -->
+    <div id="features2" class="section pt-6 pt-md-7 pb-4 pb-md-5 bg-white">
+      <div class="container">
+        <!-- section header -->
+        <header class="text-center mx-auto mb-5">
+          <h2 class="h3 fw-bold">Why NadaaIT</h2>
+          <hr class="divider my-4 mx-auto bg-warning border-warning" />
+          <p class="lead text-muted">
+            NadaaIT softwares and websites have all sections which a
+            Health Care System Project software needs.
+          </p>
+        </header>
+
+        <!-- row -->
+        <div class="row">
+          <!-- features images -->
+          <div class="col-lg-4 text-center order-lg-2" data-aos="fade-up">
+            <div class="px-6 px-md-7 px-lg-3 px-xl-6 mb-5 mb-lg-0">
+              <!-- Android potrait -->
+              <figure class="position-relative">
+                <svg version="1.0" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 480.000000 906.000000">
+                  <!-- Clip path image -->
+                  <defs>
+                    <clipPath id="svgf">
+                      <rect x="50" y="16.5" width="480" height="1066" />
+                    </clipPath>
+                  </defs>
+                  <!-- Phone screen -->
+                  <!-- <image clip-path="url(#svgf)"
+                    xlink:href='{% static "src/img-min/app/NadaaIT - Health Care System softwares and Websites.JPG" %}'
+                    height="94%" width="98%" style="transform: translateY(15px)"></image> -->
+                  <!-- Phone cover -->
+                  <image xlink:href='{% static "src/img-min/app/device/android-dark.png" %}' height="100%" width="100%">
+                  </image>
+                </svg>
+              </figure>
+            </div>
+          </div>
+          <!-- features align left -->
+          <div class="col-lg-4 order-lg-1" data-aos="fade-right" data-aos-delay="100">
+            <div class="three-features pb-4 position-relative features-end text-start text-lg-end">
+              <!-- icon -->
+              <svg xmlns="https://www.w3.org/2000/svg" class="features-icon text-primary" width="2rem" height="3.5rem"
+                viewBox="0 0 512 512" width="2rem" height="2rem" fill="currentColor" viewBox="0 0 512 512">
+
+                <path
+                  d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z"
+                  style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-miterlimit: 10;
+                      stroke-width: 32px;
+                    " />
+              </svg>
+              <!-- <i class="fas fa-shipping-fast features-icon text-primary"></i> -->
+
+              <h3 class="h5">Multiple Call To Actions</h3>
+              <p>Multiple triggers to get higher volume of leads.</p>
+            </div>
+            <div class="
+                  three-features
+                  pb-4
+                  position-relative
+                  features-end
+                  text-start text-lg-end
+                ">
+              <!-- icon -->
+              <svg xmlns="https://www.w3.org/2000/svg" class="features-icon text-primary" width="2rem" height="2rem"
+                fill="currentColor" viewBox="0 0 512 512">
+                <path
+                  d="M414.73,97.1A222.14,222.14,0,0,0,256.94,32C134,32,33.92,131.58,33.87,254A220.61,220.61,0,0,0,63.65,365L32,480l118.25-30.87a223.63,223.63,0,0,0,106.6,27h.09c122.93,0,223-99.59,223.06-222A220.18,220.18,0,0,0,414.73,97.1ZM256.94,438.66h-.08a185.75,185.75,0,0,1-94.36-25.72l-6.77-4L85.56,427.26l18.73-68.09-4.41-7A183.46,183.46,0,0,1,71.53,254c0-101.73,83.21-184.5,185.48-184.5A185,185,0,0,1,442.34,254.14C442.3,355.88,359.13,438.66,256.94,438.66ZM358.63,300.47c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54,2.78-14.4,18-17.65,21.75-6.5,4.16-12.07,1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56,2.44-11.32c2.51-2.49,5.57-6.48,8.36-9.72s3.72-5.56,5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53,20.53,0,0,0-14.86,6.94c-5.11,5.56-19.51,19-19.51,46.28s20,53.68,22.76,57.38,39.3,59.73,95.21,83.76a323.11,323.11,0,0,0,31.78,11.68c13.35,4.22,25.5,3.63,35.1,2.2,10.71-1.59,33-13.42,37.63-26.38s4.64-24.06,3.25-26.37S364.21,303.24,358.63,300.47Z"
+                  style="fill-rule: evenodd" />
+              </svg>
+              <!-- <i class="fas fa-chart-pie features-icon text-primary"></i> -->
+
+              <h3 class="h5">Call, WhatsApp & Site Visits</h3>
+              <p>
+                Effective Buttons to dial a call, send a WhatsApp to your
+                Sales Team.
+              </p>
+            </div>
+            <div class="
+                  three-features
+                  pb-4
+                  position-relative
+                  features-end
+                  text-start text-lg-end
+                ">
+              <!-- icon -->
+              <svg xmlns="https://www.w3.org/2000/svg" class="features-icon text-primary" width="2rem" height="2rem"
+                fill="currentColor" viewBox="0 0 512 512">
+                <path
+                  d="M80,212V448a16,16,0,0,0,16,16h96V328a24,24,0,0,1,24-24h80a24,24,0,0,1,24,24V464h96a16,16,0,0,0,16-16V212"
+                  style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+                <path d="M480,256,266.89,52c-5-5.28-16.69-5.34-21.78,0L32,256" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+                <polyline points="400 179 400 64 352 64 352 133" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+              </svg>
+              <!-- <i class="fas fa-credit-card features-icon text-primary"></i> -->
+
+              <h3 class="h5">Health Care System Project Sections</h3>
+              <p>
+                Health Care System Project Overview, Highlights, Amenities,
+                Configurations and many more.
+              </p>
+            </div>
+          </div>
+
+          <!-- features align right -->
+          <div class="col-lg-4 order-lg-3" data-aos="fade-left" data-aos-delay="100">
+            <div class="three-features pb-4 position-relative text-start text-md-end text-lg-start">
+              <!-- icon -->
+              <svg xmlns="https://www.w3.org/2000/svg" class="features-icon text-primary" width="2rem" height="2rem"
+                fill="currentColor" viewBox="0 0 512 512">
+                <path
+                  d="M403.29,32H280.36a14.46,14.46,0,0,0-10.2,4.2L24.4,281.9a28.85,28.85,0,0,0,0,40.7l117,117a28.86,28.86,0,0,0,40.71,0L427.8,194a14.46,14.46,0,0,0,4.2-10.2V60.8A28.66,28.66,0,0,0,403.29,32Z"
+                  style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+                <path d="M352,144a32,32,0,1,1,32-32A32,32,0,0,1,352,144Z" />
+                <path d="M230,480,492,218a13.81,13.81,0,0,0,4-10V80" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    " />
+              </svg>
+              <!-- <i class="fas fa-desktop features-icon text-primary"></i> -->
+
+              <h3 class="h5">Pricing Section</h3>
+              <p>Dedicated Pricing Section for Health Care System Project</p>
+            </div>
+            <div class="three-features pb-4 position-relative text-start text-md-end text-lg-start">
+              <!-- icon -->
+              <svg xmlns="https://www.w3.org/2000/svg" class="features-icon text-primary" width="2rem" height="2rem"
+                fill="currentColor" viewBox="0 0 512 512">
+                <path d="M432,112V96a48.14,48.14,0,0,0-48-48H64A48.14,48.14,0,0,0,16,96V352a48.14,48.14,0,0,0,48,48H80"
+                  style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:32px" />
+                <rect x="96" y="128" width="400" height="336" rx="45.99" ry="45.99"
+                  style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:32px" />
+                <ellipse cx="372.92" cy="219.64" rx="30.77" ry="30.55"
+                  style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                <path d="M342.15,372.17,255,285.78a30.93,30.93,0,0,0-42.18-1.21L96,387.64"
+                  style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                <path d="M265.23,464,383.82,346.27a31,31,0,0,1,41.46-1.87L496,402.91"
+                  style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              </svg>
+              <!-- <i class="fas fa-shopping-bag features-icon text-primary"></i> -->
+
+              <h3 class="h5">Image Gallery</h3>
+              <p>
+                Image Gallery and a Walkthrough section to attract your
+                customers
+              </p>
+            </div>
+            <div class="three-features pb-4 position-relative text-start text-md-end text-lg-start">
+              <!-- icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class='features-icon text-primary' width="2rem" height="2rem"
+                fill="currentColor" viewBox="0 0 512 512">
+                <rect x="48" y="64" width="416" height="384" rx="48" ry="48"
+                  style="fill:none;stroke:currentColor;stroke-linejoin:round;stroke-width:32px" />
+                <path
+                  d="M397.82,64H114.18C77.69,64,48,94.15,48,131.2V176H64c0-16,16-32,32-32H416c16,0,32,16,32,32h16V131.2C464,94.15,434.31,64,397.82,64Z" />
+              </svg>
+              <!-- <i class="fas fa-shopping-bag features-icon text-primary"></i> -->
+
+              <h3 class="h5">Custom Domain</h3>
+              <p>
+                Host the software & Website on a Custom Domain/Sub-Domain
+              </p>
+            </div>
+
+          </div>
+
+          <!-- end row -->
+        </div>
+      </div>
+    </div><!-- end features -->
+    <!-- =========={ CTA }==========  -->
+    <div id="download" class="section pt-6 pt-md-7 pb-5 pb-md-6 bg-gradient-primary jarallax">
+      <!-- background parallax -->
+      <img class="jarallax-img" src="{% static 'src/img-min/bg/bg3.jpg' %}" alt="title">
+
+      <!-- background overlay -->
+      <div class="overlay bg-gradient-primary opacity-90 z-index-n1"></div>
+
+      <div class="container">
+        <div class="text-center">
+          <h2 class="h3 fw-bold text-white text-shadow">Planning Your Next Business Campaign?</h2>
+          <hr class="divider my-4 bg-warning border-warning">
+          <p class="lead text-light mb-5">Contact our team to get started with your next Health Care System Project
+            Software
+            and Website.</p>
+
+          <!-- APP STORE -->
+          <div class="md-4">
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- End download -->
+    <!-- =========={ PROCESS }==========  -->
+    <div id="process" class="section py-6 py-md-7 bg-light">
+      <header class="text-center mx-auto mt-6 mb-5" id='hiw'>
+        <h2 class="h3 fw-bold">How It Works</h2>
+        <hr class="divider my-4 mx-auto bg-warning border-warning" />
+        <p class="lead text-muted ">
+          Create result oriented softwares and websites for your next Health Care System Project on the go with
+          NadaaIT!
+        </p>
+      </header>
+
+      <div id="progress-line" class="container d-none d-lg-block">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+
+            <!-- process horizontal -->
+            <ul class="process-horizontal ps-0">
+              <li class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor"
+                  viewBox="0 0 512 512" class='p-2 p-md-3 bg-primary text-white'>
+                  <circle cx="256" cy="160" r="128"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <path d="M143.65,227.82,48,400l86.86-.42a16,16,0,0,1,13.82,7.8L192,480l88.33-194.32"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <path d="M366.54,224,464,400l-86.86-.42a16,16,0,0,0-13.82,7.8L320,480,256,339.2"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <circle cx="256" cy="160" r="64"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                </svg>
+
+                <h3 class="h5 text-primary"> Collect Project Details</h3>
+                <p class="d-none small d-md-block px-4"> We collect all the project details from your team</p>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem"
+                  class='p-2 p-md-3 bg-primary text-white' fill="currentColor" viewBox="0 0 512 512">
+                  <path
+                    d="M436.67,184.11a27.17,27.17,0,0,1-38.3,0l-22.48-22.49a27.15,27.15,0,0,1,0-38.29l50.89-50.89a.85.85,0,0,0-.26-1.38C393.68,57,351.09,64.15,324.05,91c-25.88,25.69-27.35,64.27-17.87,98a27,27,0,0,1-7.67,27.14l-173,160.76a40.76,40.76,0,1,0,57.57,57.54l162.15-173.3A27,27,0,0,1,372,253.44c33.46,8.94,71.49,7.26,97.07-17.94,27.49-27.08,33.42-74.94,20.1-102.33a.85.85,0,0,0-1.36-.22Z"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
+                  <path
+                    d="M224,284c-17.48-17-25.49-24.91-31-30.29a18.24,18.24,0,0,1-3.33-21.35,20.76,20.76,0,0,1,3.5-4.62l15.68-15.29a18.66,18.66,0,0,1,5.63-3.87,18.11,18.11,0,0,1,20,3.62c5.45,5.29,15.43,15,33.41,32.52"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <path
+                    d="M317.07,291.3c40.95,38.1,90.62,83.27,110,99.41a13.46,13.46,0,0,1,.94,19.92L394.63,444a14,14,0,0,1-20.29-.76c-16.53-19.18-61.09-67.11-99.27-107"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <path
+                    d="M17.34,193.5l29.41-28.74a4.71,4.71,0,0,1,3.41-1.35,4.85,4.85,0,0,1,3.41,1.35h0a9.86,9.86,0,0,0,8.19,2.77c3.83-.42,7.92-1.6,10.57-4.12,6-5.8-.94-17.23,4.34-24.54a207,207,0,0,1,19.78-22.6c6-5.88,29.84-28.32,69.9-44.45A107.31,107.31,0,0,1,206.67,64c22.59,0,40,10,46.26,15.67a89.54,89.54,0,0,1,10.28,11.64A78.92,78.92,0,0,0,254,88.54,68.82,68.82,0,0,0,234,87.28c-13.33,1.09-29.41,7.26-38,14-13.9,11-19.87,25.72-20.81,44.71-.68,14.12,2.72,22.1,36.1,55.49a6.6,6.6,0,0,1-.34,9.16l-18.22,18a6.88,6.88,0,0,1-9.54.09c-21.94-21.94-36.65-33.09-45-38.16s-15.07-6.5-18.3-6.85a30.85,30.85,0,0,0-18.27,3.87,11.39,11.39,0,0,0-2.64,2,14.14,14.14,0,0,0,.42,20.08l1.71,1.6a4.63,4.63,0,0,1,0,6.64L71.73,246.6A4.71,4.71,0,0,1,68.32,248a4.86,4.86,0,0,1-3.41-1.35L17.34,200.22A4.88,4.88,0,0,1,17.34,193.5Z"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                </svg>
+
+                <h3 class="h5 text-primary">Project Setup</h3>
+                <p class="d-none small d-md-block px-4">Health Care System project software and websites are set up by
+                  our team within 2-3 Hours.
+                </p>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem"
+                  class='p-2 p-md-3 bg-primary text-white' fill="currentColor" viewBox="0 0 512 512">
+                  <path d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z"
+                    style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                  <path
+                    d="M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z"
+                    style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                  <path d="M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <path d="M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <line x1="256" y1="48" x2="256" y2="464"
+                    style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                  <line x1="464" y1="256" x2="48" y2="256"
+                    style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                </svg>
+
+                <h3 class="h5 text-primary">Make it Live & Share</h3>
+                <p class="d-none small d-md-block px-4">We point the domain to the project software and website &
+                  it’s ready to share.</p>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem"
+                  class='p-2 p-md-3 bg-primary text-white' fill="currentColor" viewBox="0 0 512 512">
+                  <path d="M376,144c-3.92,52.87-44,96-88,96s-84.15-43.12-88-96c-4-55,35-96,88-96S380,90,376,144Z"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <path
+                    d="M288,304c-87,0-175.3,48-191.64,138.6-2,10.92,4.21,21.4,15.65,21.4H464c11.44,0,17.62-10.48,15.65-21.4C463.3,352,375,304,288,304Z"
+                    style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                  <line x1="88" y1="176" x2="88" y2="288"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                  <line x1="144" y1="232" x2="32" y2="232"
+                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                </svg>
+
+                <h3 class="h5 text-primary">Start Getting Leads</h3>
+                <p class="d-none small d-md-block px-4"> Start your campaign and let the NadaaIT - Health Care System
+                  software and websites deliver the results.</p>
+              </li>
+            </ul><!-- end processs horizontal -->
+          </div>
+        </div>
+      </div>
+
+      <!-- =========={ PROCESS }==========  -->
+      <div id="process" class="d-block d-md-none section py-6 py-md-7 bg-light">
+        <div id="progress-line" class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- processs vertical -->
+              <ol class="process-vertical">
+                <li class="process-vertical-item">
+                  <div class="process-vertical-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor"
+                      viewBox="0 0 512 512" class='p-2 p-md-3 bg-primary rounded-circle text-white'>
+                      <circle cx="256" cy="160" r="128"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <path d="M143.65,227.82,48,400l86.86-.42a16,16,0,0,1,13.82,7.8L192,480l88.33-194.32"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <path d="M366.54,224,464,400l-86.86-.42a16,16,0,0,0-13.82,7.8L320,480,256,339.2"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <circle cx="256" cy="160" r="64"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                    </svg>
+                  </div>
+
+                  <div class="process-vertical-content">
+                    <h3 class="h5">Collect Project Details</h3>
+                    <p> We collect all the project details from your team.</p>
+                  </div>
+                </li>
+
+                <li class="process-vertical-item">
+                  <div class="process-vertical-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem"
+                      class='p-2 p-md-3 bg-primary rounded-circle text-white' fill="currentColor" viewBox="0 0 512 512">
+                      <path
+                        d="M436.67,184.11a27.17,27.17,0,0,1-38.3,0l-22.48-22.49a27.15,27.15,0,0,1,0-38.29l50.89-50.89a.85.85,0,0,0-.26-1.38C393.68,57,351.09,64.15,324.05,91c-25.88,25.69-27.35,64.27-17.87,98a27,27,0,0,1-7.67,27.14l-173,160.76a40.76,40.76,0,1,0,57.57,57.54l162.15-173.3A27,27,0,0,1,372,253.44c33.46,8.94,71.49,7.26,97.07-17.94,27.49-27.08,33.42-74.94,20.1-102.33a.85.85,0,0,0-1.36-.22Z"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
+                      <path
+                        d="M224,284c-17.48-17-25.49-24.91-31-30.29a18.24,18.24,0,0,1-3.33-21.35,20.76,20.76,0,0,1,3.5-4.62l15.68-15.29a18.66,18.66,0,0,1,5.63-3.87,18.11,18.11,0,0,1,20,3.62c5.45,5.29,15.43,15,33.41,32.52"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <path
+                        d="M317.07,291.3c40.95,38.1,90.62,83.27,110,99.41a13.46,13.46,0,0,1,.94,19.92L394.63,444a14,14,0,0,1-20.29-.76c-16.53-19.18-61.09-67.11-99.27-107"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <path
+                        d="M17.34,193.5l29.41-28.74a4.71,4.71,0,0,1,3.41-1.35,4.85,4.85,0,0,1,3.41,1.35h0a9.86,9.86,0,0,0,8.19,2.77c3.83-.42,7.92-1.6,10.57-4.12,6-5.8-.94-17.23,4.34-24.54a207,207,0,0,1,19.78-22.6c6-5.88,29.84-28.32,69.9-44.45A107.31,107.31,0,0,1,206.67,64c22.59,0,40,10,46.26,15.67a89.54,89.54,0,0,1,10.28,11.64A78.92,78.92,0,0,0,254,88.54,68.82,68.82,0,0,0,234,87.28c-13.33,1.09-29.41,7.26-38,14-13.9,11-19.87,25.72-20.81,44.71-.68,14.12,2.72,22.1,36.1,55.49a6.6,6.6,0,0,1-.34,9.16l-18.22,18a6.88,6.88,0,0,1-9.54.09c-21.94-21.94-36.65-33.09-45-38.16s-15.07-6.5-18.3-6.85a30.85,30.85,0,0,0-18.27,3.87,11.39,11.39,0,0,0-2.64,2,14.14,14.14,0,0,0,.42,20.08l1.71,1.6a4.63,4.63,0,0,1,0,6.64L71.73,246.6A4.71,4.71,0,0,1,68.32,248a4.86,4.86,0,0,1-3.41-1.35L17.34,200.22A4.88,4.88,0,0,1,17.34,193.5Z"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                    </svg>
+
+                  </div>
+
+                  <div class="process-vertical-content">
+                    <h3 class="h5">Project Setup</h3>
+                    <p>Health Care System project software and websites are set up by
+                      our team within 2-3 Hours.</p>
+                  </div>
+                </li>
+
+                <li class="process-vertical-item">
+                  <div class="process-vertical-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem"
+                      class='p-2 p-md-3 bg-primary text-white rounded-circle' fill="currentColor" viewBox="0 0 512 512">
+                      <path d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z"
+                        style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                      <path
+                        d="M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z"
+                        style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                      <path d="M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <path d="M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <line x1="256" y1="48" x2="256" y2="464"
+                        style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                      <line x1="464" y1="256" x2="48" y2="256"
+                        style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                    </svg>
+
+                  </div>
+
+                  <div class="process-vertical-content">
+                    <h3 class="h5">Make it Live & Share</h3>
+                    <p>We point the domain to the project software and website &
+                      it’s ready to share.</p>
+                  </div>
+                </li>
+              </ol><!-- end processs vertical -->
+            </div>
+
+            <div class="col-lg-6">
+              <!-- processs vertical -->
+              <ol class="process-vertical">
+                <li class="process-vertical-item">
+                  <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem"
+                      class='p-2 p-md-3 bg-primary rounded-circle text-white' fill="currentColor" viewBox="0 0 512 512">
+                      <path d="M376,144c-3.92,52.87-44,96-88,96s-84.15-43.12-88-96c-4-55,35-96,88-96S380,90,376,144Z"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <path
+                        d="M288,304c-87,0-175.3,48-191.64,138.6-2,10.92,4.21,21.4,15.65,21.4H464c11.44,0,17.62-10.48,15.65-21.4C463.3,352,375,304,288,304Z"
+                        style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
+                      <line x1="88" y1="176" x2="88" y2="288"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                      <line x1="144" y1="232" x2="32" y2="232"
+                        style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                    </svg>
+
+                  </div>
+
+                  <div class="process-vertical-content">
+                    <h3 class="h5">Start Getting Leads</h3>
+                    <p>Start your campaign and let the NadaaIT - Health Care System
+                      software and websites deliver the results.</p>
+                  </div>
+                </li>
+
+
+              </ol><!-- end processs vertical -->
+            </div>
+          </div>
+        </div>
+      </div><!-- End process -->
+
+    </div><!-- End process -->
+
+    <!-- =========={ CTA }==========  -->
+    <div id="download" class="section pt-6 pt-md-7 pb-5 pb-md-6 bg-gradient-primary jarallax">
+      <!-- background parallax -->
+      <img class="jarallax-img" src="{% static 'src/img-min/bg/bg3.jpg' %}" alt="title">
+
+      <!-- background overlay -->
+      <div class="overlay bg-gradient-primary opacity-90 z-index-n1"></div>
+
+      <div class="container">
+        <div class="text-center">
+          <h2 class="h3 fw-bold text-white text-shadow">Create Your Health Care System Project software for FREE!</h2>
+          <hr class="divider my-4 bg-warning border-warning">
+          <p class="lead text-light mb-5">Try NadaaIT Health Care System Project software and website for Free for 15
+            Days.</p>
+
+          <!-- APP STORE -->
+          <div class="md-4">
+            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Get Started</a>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- End download -->
+    <!-- =========={ FAQ }==========  -->
+    <!-- =========={ FAQ }==========  -->
+    <div id="faqs" class="section py-6 pt-md-7 pb-md-6 bg-light">
+      <div class="container">
+        <!-- Questions Header -->
+        <header class="text-center mx-auto mb-5">
+          <h2 class="h3 fw-bold">FAQs</h2>
+          <hr class="divider my-4 bg-warning border-warning">
+          <p class="lead text-muted">Most Popular Question from New Client!</p>
+        </header>
+        <div class="row">
+          <div class="accordion-list col-12">
+            <ul class="row list-unstyled">
+              {% for faq_list in faq %}
+              <li class="col-md-6" data-aos="fade-up">
+                <!-- question   -->
+                <div class="list-group-item border-0 shadow-sm mb-4">
+                  <!-- icon -->
+                  <!-- <i class="far fa-question-circle"></i> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="20" height="20" viewBox="0 0 512 512">
+                    <path stroke="currentColor" d="M256,80A176,176,0,1,0,432,256,176,176,0,0,0,256,80Z"
+                      style="fill:none;stroke-miterlimit:10;stroke-width:32px" />
+                    <path stroke="currentColor"
+                      d="M200,202.29s.84-17.5,19.57-32.57C230.68,160.77,244,158.18,256,158c10.93-.14,20.69,1.67,26.53,4.45,10,4.76,29.47,16.38,29.47,41.09,0,26-17,37.81-36.37,50.8S251,281.43,251,296"
+                      style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:28px" />
+                    <circle cx="250" cy="348" r="20" />
+                  </svg>
+
+                  <a data-bs-toggle="collapse" class="collapsed h5 py-2" href="#accordion-list-{{faq_list.id}}"
+                    aria-expanded="false">{{faq_list.title}}</a>
+                  <div id="accordion-list-{{faq_list.id}}" class="collapse p-3" data-bs-parent=".accordion-list">
+                    <p class="mb-0">
+                      {{faq_list.answer}}
+                    </p>
+                  </div>
+                </div><!-- end question -->
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- End FAQ -->
+    <!-- End FAQ -->
+
+    <!-- =========={ SUBCRIBE }==========  -->
+    <div id="subcribe" class="section pt-7 pb-8 bg-white overflow-hidden">
+      <!-- particle moving animation -->
+      <div class="particle">
+        <div class="scroll-rotate position-absolute opacity-50 text-primary z-index-n1" style="right:9%;bottom: 72%;">
+          <svg class="bi bi-bounding-box-circles" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="scroll-rotate position-absolute opacity-50 text-warning z-index-n1" style="right:12%;bottom: 30%;">
+          <svg class="bi bi-bounding-box-circles" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="scroll-rotate position-absolute opacity-50 text-danger d-none d-lg-block z-index-n1"
+          style="right:22%;bottom: 55%;">
+          <svg class="bi bi-bounding-box-circles" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="scroll-rotate position-absolute opacity-50 text-danger d-none d-lg-block z-index-n1"
+          style="left:40%;top: 20%;">
+          <svg class="bi bi-bounding-box-circles" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="scroll-rotate position-absolute opacity-50 text-primary z-index-n1" style="left:60%;bottom: 20%;">
+          <svg class="bi bi-bounding-box-circles" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="scroll-rotate position-absolute opacity-50 text-warning z-index-n1" style="left:20%;bottom: 60%;">
+          <svg class="bi bi-bounding-box-circles" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="scroll-rotate position-absolute opacity-50 text-primary z-index-n1" style="left:12%;bottom: 30%;">
+          <svg class="bi bi-bounding-box-circles" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="scroll-rotate position-absolute opacity-50 text-success z-index-n1" style="left:6%;bottom:75%;">
+          <svg class="bi bi-bounding-box-circles" width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12.5 2h-9V1h9v1zm-10 1.5v9h-1v-9h1zm11 9v-9h1v9h-1zM3.5 14h9v1h-9v-1z"
+              clip-rule="evenodd"></path>
+            <path fill-rule="evenodd"
+              d="M14 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zM2 3a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4zm0 11a1 1 0 100-2 1 1 0 000 2zm0 1a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-6" data-aos="fade-up">
+            <!-- Title -->
+            <div class="text-center mx-auto mb-4">
+              <svg class="bi bi-envelope-open text-primary mb-4" width="5rem" height="5rem" viewBox="0 0 16 16"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M.243 6.929l.514-.858L8 10.417l7.243-4.346.514.858L8 11.583.243 6.93z"
+                  clip-rule="evenodd"></path>
+                <path fill-rule="evenodd"
+                  d="M7.184 10.68L.752 14.432l-.504-.864L6.68 9.816l.504.864zm1.632 0l6.432 3.752.504-.864L9.32 9.816l-.504.864z"
+                  clip-rule="evenodd"></path>
+                <path fill-rule="evenodd"
+                  d="M8.47 1.318a1 1 0 00-.94 0l-6 3.2A1 1 0 001 5.4V14a1 1 0 001 1h12a1 1 0 001-1V5.4a1 1 0 00-.53-.882l-6-3.2zM7.06.435a2 2 0 011.882 0l6 3.2A2 2 0 0116 5.4V14a2 2 0 01-2 2H2a2 2 0 01-2-2V5.4a2 2 0 011.059-1.765l6-3.2z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <h2><span class="fw-light">Subcribe</span> Newsletter</h2>
+              <hr class="divider my-4 mx-auto bg-warning border-warning">
+              <p class="lead text-muted mb-0">Subscribe to our mailing list to receives daily updates!</p>
+            </div><!-- End Title -->
+
+            <!--form-->
+            <div class="mx-auto">
+              <form id="subscribe1" method="POST" class="needs-validation" action="{% url 'subscribe' %}" novalidate>
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-12 col-lg-8 mb-4 mb-lg-0">
+                    <input type="email" class="form-control" id="email" placeholder="Email address" aria-label="email"
+                      name="email" required>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <div class="d-grid mb-2">
+                      <button type="submit" class="btn btn-primary">Subcribe!</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--end form-->
+          </div>
+        </div>
+      </div><!-- end subcribe -->
+    </div><!-- End Contact Form -->
+
+  </main>
+  <!-- end main -->
+
+  <!-- =========={ FOOTER }==========  -->
+  <footer class="bg-secondary">
+    <!--Footer content-->
+    <div id="footer" class="footer-dark section pt-6 pb-5">
+      <div class="container">
+        <div class="row">
+          <!-- left widget -->
+          <div class="col-lg-4">
+            <!-- Footer Content -->
+            <div class="widget-content pe-lg-5">
+              <!-- Footer Title -->
+              <h4 class="h5 mb-4">About Us</h4>
+              <div class="widget-body">
+                <p>
+                  {{aboutus.text}}
+                </p>
+                <address>
+                  <!-- <i class="fa fa-map-marker-alt me-2"></i> -->
+                  <svg xmlns="https://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M256,48c-79.5,0-144,61.39-144,137,0,87,96,224.87,131.25,272.49a15.77,15.77,0,0,0,25.5,0C304,409.89,400,272.07,400,185,400,109.39,335.5,48,256,48Z"
+                      style="
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
+                    <circle fill="currentColor" cx="256" cy="192" r="48" style="
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
+                  </svg>
+                  {{aboutus.location}}
+                </address>
+                <p class="footer-info">
+                  <!-- <i class="fa fa-phone me-2"></i> -->
+                  <svg xmlns="https://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z"
+                      style="
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-miterlimit: 10;
+                          stroke-width: 32px;
+                        " />
+                  </svg>
+                  Call Us:
+                  <a class='footer-info' href="tel:7700 90 92 95">{{aboutus.contact_no}}</a>
+                </p>
+                <p class="footer-info">
+                  <!-- <i class="fa fa-envelope me-2"></i> -->
+                  <svg xmlns="https://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 512 512">
+                    <rect fill="currentColor" x="48" y="96" width="416" height="320" rx="40" ry="40" style="
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
+                    <polyline fill="currentColor" points="112 160 256 272 400 160" style="
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
+                  </svg>
+                  {{aboutus.email}}
+                </p>
+              </div>
+            </div>
+            <ul class="footer-links list-unstyled social-icon mb-4">
+              <!--facebook-->
+              <li class="my-2 me-3">
+                <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/NadaaIT" title="Facebook">
+                  <!-- <i class="fab fa-facebook fa-2x"></i> -->
+                  <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z" />
+                  </svg>
+                </a>
+              </li>
+              <!--instagram-->
+              <li class="my-2 me-3">
+                <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/NadaaIT" title="Instagram">
+                  <!-- <i class="fab fa-instagram fa-2x"></i> -->
+                  <svg xmlns="https://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z" />
+                    <path fill="currentColor" d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z" />
+                    <path fill="currentColor"
+                      d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z" />
+                  </svg>
+                </a>
+              </li>
+              <!--end instagram-->
+            </ul>
+          </div>
+
+          <!-- center widget -->
+          <div class="footer-links col-md-6 col-lg-3">
+            <!-- Footer Content -->
+            <div class="widget-content">
+              <!-- Footer Title -->
+              <h4 class="h5 mb-4">Popular Links</h4>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled before-arrow">
+                    <li class="py-2"><a href="#">Home</a></li>
+                    <li class="py-2"><a href="#features">Features</a></li>
+                    <li class="py-2"><a href="#hiw">How It Works</a></li>
+                    <li class="py-2"><a href="#price">Pricing</a></li>
+                    <li class="py-2"><a href="#faqs">Faqs</a></li>
+                    <li class="py-2"><a href="#contactteam">Contact Us</a></li>
+                    <li class="py-2"><a href="https://geteazyapp.com/" target="_blank">EazyApp</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div class="widget col-md-6 col-lg-4" id='contactteam'>
+            <!-- Footer Content -->
+            <div class="widget-content">
+              <!-- Footer Title -->
+              <div class="col-lg-16 ps-lg-0 mt-5 mt-lg-0" data-aos="fade-left">
+                <div class="w-100">
+                  <!-- contact form -->
+                  <form action="{% url 'contactteam' %}" method="POST" class="contact-form">
+                    {% csrf_token %}
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <label class="form-label" for="name">Your Name</label>
+                        <input type="text" required name="name" class="form-control" id="name" />
+                        <div class="validate"></div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <label class="form-label" for="subject">Phone</label>
+                        <input type="text" required class="form-control" name="phone" id="subject" />
+                        <div class="validate"></div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="email">Your Email</label>
+                      <input type="email" required class="form-control" name="email" id="email" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="messages">Message</label>
+                      <textarea class="form-control" name="message" rows="4" required id="messages"></textarea>
+                      <div class="validate"></div>
+                    </div>
+                    <div class="text-center mb-4">
+                      <button class="btn btn-primary" type="submit">
+                        <svg xmlns="https://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                          class="me-2 rtl-270" viewBox="0 0 512 512">
+                          <path
+                            d="M53.12,199.94l400-151.39a8,8,0,0,1,10.33,10.33l-151.39,400a8,8,0,0,1-15-.34L229.66,292.45a16,16,0,0,0-10.11-10.11L53.46,215A8,8,0,0,1,53.12,199.94Z"
+                            style="
+                                fill: none;
+                                stroke: currentColor;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-width: 32px;
+                              "></path>
+                          <line x1="460" y1="52" x2="227" y2="285" style="
+                                fill: none;
+                                stroke: currentColor;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-width: 32px;
+                              "></line>
+                        </svg>
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                  <!-- end contact form -->
+                </div>
+              </div>
+
+              <div class="my-1"></div>
+
+            </div>
+            <!-- End Footer Content -->
+          </div>
+          <!-- end right -->
+        </div>
+      </div>
+    </div>
+    <!--End footer content-->
+
+    <!--Start footer copyright-->
+    <div class="footer-dark">
+      <div class="container py-4 border-top border-smooth">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="d-block my-3">
+              Copyright &copy; NadaaIT | All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+
+      <!--End footer copyright-->
+  </footer>
+  <!-- End Footer -->
+
+  <!-- =========={ SCROLL TO TOP }==========  -->
+  <a href="#top" class="p-3 border position-fixed end-1 bottom-1 z-index-10 back-top" title="Scroll To Top">
+    <!-- <i class="fas fa-arrow-up"></i> -->
+    <svg class="bi bi-arrow-up" width="1rem" height="1rem" viewBox="0 0 16 16" fill="currentColor"
+      xmlns="https://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+      <path fill-rule="evenodd"
+        d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </a>
+  </div>
+  <!-- =========={ JAVASCRIPT }==========  -->
+  <!-- Popper and Bootstrap js -->
+  <script src='{% static "src/plugins/bootstrap/dist/js/bootstrap.bundle.min.js" %}'></script>
+
+  <!-- Plugin js -->
+  <script src='{% static "src/plugins/jarallax/dist/jarallax.min.js" %}'></script>
+  {% comment %}
+  <script src='{% static "src/plugins/jarallax/dist/jarallax-video.min.js" %}'></script> {% endcomment %}
+
+  {% comment %}
+  <script src='{% static "src/plugins/lightgallery.js/dist/js/lightgallery.min.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/lightgallery.js/demo/js/lg-thumbnail.min.js" %}'></script>
+  <script src='{% static "src/plugins/lightgallery.js/demo/js/lg-video.js" %}'></script> {% endcomment %}
+
+  {% comment %}
+  <script src='{% static "src/plugins/aos/dist/aos.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/waypoints/lib/noframework.waypoints.min.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/counterup2/dist/index.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/flickity/dist/flickity.pkgd.min.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/typed.js/lib/typed.min.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/isotope-layout/dist/isotope.pkgd.min.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/smooth-scroll/dist/smooth-scroll.polyfills.min.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/vanilla-lazyload/dist/lazyload.min.js" %}'></script> {% endcomment %}
+  {% comment %}
+  <script src='{% static "src/plugins/hc-sticky/dist/hc-sticky.js" %}'></script> {% endcomment %}
+
+  <!-- Theme js -->
+  <script src='{% static "src/js/theme.js" %}'></script>
+
+  <!-- JS Optimize -->
+  <!-- <script src="dist/js/bundle.min.js" %}'></script> -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-gradient-primary rounded-0">
+          <h5 class="modal-title text-white" id="exampleModalLabel">Contact Us</h5>
+        </div>
+        <div class="modal-body">
+          <div class="widget col-md-12 col-lg-12" id=''>
+            <!-- Footer Content -->
+            <div class="widget-content">
+              <!-- Footer Title -->
+              <div class="col-lg-16 ps-lg-0 mt-5 mt-lg-0" data-aos="fade-left">
+                <div class="w-100">
+                  <!-- contact form -->
+                  <form action="{% url 'contactteam' %}" method="POST" class="contact-form">
+                    {% csrf_token %}
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <input type="text" required name="name" placeholder='Enter Your Name' class="form-control"
+                          id="name" />
+                        <div class="validate"></div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <input type="text" required class="form-control" placeholder='Enter Your Phone No.' name="phone"
+                          id="subject" />
+                        <div class="validate"></div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <input type="email" required class="form-control" placeholder='Enter Your Email Address'
+                        name="email" id="email" />
+                      <div class="validate"></div>
+                    </div>
+                    <div class="mb-4">
+                      <textarea class="form-control" name="message" placeholder='Enter Your Message' rows="4" required
+                        id="messages"></textarea>
+                      <div class="validate"></div>
+                    </div>
+                    <!-- end contact form -->
+                </div>
+              </div>
+
+              <div class="my-1"></div>
+
+            </div>
+            <!-- End Footer Content -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center mb-4">
+            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                viewBox="0 0 512 512">
+                <line x1="368" y1="368" x2="144" y2="144"
+                  style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                <line x1="368" y1="144" x2="144" y2="368"
+                  style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+              </svg>
+              Close
+            </button>
+          </div>
+
+          <div class="text-center mb-4">
+            <button class="btn btn-primary" type="submit">
+              <svg xmlns="https://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                class="me-2 rtl-270" viewBox="0 0 512 512">
+                <path
+                  d="M53.12,199.94l400-151.39a8,8,0,0,1,10.33,10.33l-151.39,400a8,8,0,0,1-15-.34L229.66,292.45a16,16,0,0,0-10.11-10.11L53.46,215A8,8,0,0,1,53.12,199.94Z"
+                  style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "></path>
+                <line x1="460" y1="52" x2="227" y2="285" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "></line>
+              </svg>
+              Submit Now
+            </button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  {% if messages %}
+  {% for message in messages %}
+  <div id="alert" {% if message.tags == 'success' %}
+    style="width: 90%; margin: auto; background-color: #198754; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
+    {% else %}
+    style="width: 90%; margin: auto; background-color: #DC3545; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
+    {% endif %}>
+      <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}ERROR:{% endif %}</strong> <span
+          style="color: white;">{{ message }}</span>
+      <button type="button" onclick="Close()" style="float: right;" class="btn-close" aria-label="Close"><i
+              class="fa-solid fa-times"></i></button>
+  </div>
+  {% endfor %}
+  {% endif %}
+  <script>
+      let alert = document.getElementById('alert')
+      if (alert) {
+          function Close() {
+              alert.style.display = 'none';
+          }
+          window.onload = () => {
+              setTimeout(() => {
+                  alert.style.display = 'none';
+              }, 2000);
+          }
+      }
+  </script>  
+</body>
+
+</html>

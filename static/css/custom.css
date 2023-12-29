@@ -1,0 +1,57 @@
+/*-----------------------------------------------------------------------------------
+
+    CUSTOM CSS FILE TO OVERRIDE ALL THE STYLES OF THE THEME
+
+-----------------------------------------------------------------------------------*/
+
+.header-price-band{	
+	margin-top: 2.2em;
+	font-weight: bolder;
+	font-size: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+
+.header-price-band .no-bg{
+	/*padding: 10px;*/
+	background: none;
+	color: white;
+	border: 3px solid #{{color}};
+}
+
+.header-price-band .dark-bg{
+	/*padding: 10px;*/
+	color: white;
+	background-color: #{{color}};
+	border: 1px solid #{{color}};
+	margin: 0;
+}
+
+.navbar-light .navbar-brand{
+	color: #fff;
+}
+
+.process-steps-xs.about-project li:after{
+	content: none;
+}
+
+.about-project .process-step-icon img{
+	max-width: 45px;
+}
+
+.service-block4.service-box{
+	box-shadow: 0 10px 20px 0 rgba(50,50,50,0.12);
+}
+
+.butn.theme:hover, .butn.theme.cta:hover{
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
