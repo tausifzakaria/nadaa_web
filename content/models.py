@@ -55,3 +55,9 @@ class Contact_Us(models.Model):
 
 class Subscription(models.Model):
     email = models.CharField(max_length=255)
+
+class Services(models.Model):
+    service_name_english = models.CharField(max_length=50)
+    service_name_arabic = models.CharField(max_length=50)
+    service_icon = models.FileField(upload_to='Service Icon',null=True,blank=True)
+    demo_link = models.URLField(max_length=200)

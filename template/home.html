@@ -66,7 +66,6 @@
 </style>
 
 <body id="top">
-  <div id="google_translate_element"></div>
   <!--Skippy-->
   <a id="skippy" class="visually-hidden-focusable" href="#content">
     <div class="container">
@@ -144,12 +143,12 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#features" role="button" aria-expanded="false" id="navbarDropdown2">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Servicemodal" rel="noopener">
                 Services
               </a>
             </li>
             
-            {% comment %} <li class="nav-item">
+            {% comment %} <li class="nav-item">`
               <a class="nav-link" href="#hiw" role="button" aria-expanded="false" id="navbarDropdown3">
                 How It Works
               </a>
@@ -2029,6 +2028,33 @@
           </div>
         </div>
         </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Servicemodal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-gradient-primary rounded-0">
+          <h5 class="modal-title text-white" id="serviceModalLabel">Services</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            {% for serv in services %}
+            <div class="col-sm-12 col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  {% if serv.service_icon %}
+                  <img src="{{serv.service_icon.url}}" width="100" class="img-fluid" alt="icon">
+                  {% endif %}
+                  <h5 class="card-title">{{serv.service_name_english}}</h5>
+                  <a href="{{serv.demo_link}}" class="btn btn-primary">See Demo</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
