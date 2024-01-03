@@ -8,12 +8,14 @@ def home(request):
     faq = Faq.objects.all()
     aboutus = AboutUs.objects.all().last()
     socialmedia = SocialMedia.objects.all()
+    services = Services.objects.all()
     context={
         'content':content,
         'banner':banner,
         'faq':faq,
         'aboutus':aboutus,
         'socialmedia':socialmedia,
+        'services':services,
     }
     return render(request,"home.html",context)
 
@@ -23,12 +25,14 @@ def index(request):
     faq = Faq.objects.all()
     aboutus = AboutUs.objects.all().last()
     socialmedia = SocialMedia.objects.all()
+    services = Services.objects.all()
     context={
         'content':content,
         'banner':banner,
         'faq':faq,
         'aboutus':aboutus,
         'socialmedia':socialmedia,
+        'services':services,
     }
     return render(request,"index.html",context)
 

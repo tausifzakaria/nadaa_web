@@ -160,7 +160,11 @@
                                 كيف تعمل
                             </a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Servicemodal" rel="noopener">
+                                خدمات
+                            </a>
+                          </li>
                         <!-- <li class="nav-item dropdown">
               <a class="nav-link" href="#price" role="button" aria-expanded="false" id="navbarDropdown4">
                 Pricing
@@ -2118,33 +2122,60 @@
             </div>
         </div>
     </div>
-    {% if messages %}
-    {% for message in messages %}
-    <div id="alert" {% if message.tags=='success' %}
-        style="width: 90%; margin: auto; background-color: #198754; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
-        {% else %}
-        style="width: 90%; margin: auto; background-color: #DC3545; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
-        {% endif %}>
-        <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}ERROR:{% endif %}</strong> <span
-            style="color: white;">{{ message }}</span>
-        <button type="button" onclick="Close()" style="float: right;" class="btn-close" aria-label="Close"><i
-                class="fa-solid fa-times"></i></button>
-    </div>
-    {% endfor %}
-    {% endif %}
-    <script>
-        let alert = document.getElementById('alert')
-        if (alert) {
-            function Close() {
-                alert.style.display = 'none';
-            }
-            window.onload = () => {
-                setTimeout(() => {
-                    alert.style.display = 'none';
-                }, 2000);
-            }
+    <div class="modal fade" id="Servicemodal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-gradient-primary rounded-0">
+              <h5 class="modal-title text-white" id="serviceModalLabel">Services</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                {% for serv in services %}
+                <div class="col-sm-12 col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      {% if serv.service_icon %}
+                      <img src="{{serv.service_icon.url}}" width="100" class="img-fluid" alt="icon">
+                      {% endif %}
+                      <h5 class="card-title">{{serv.service_name_arabic}}</h5>
+                      <a href="{{serv.demo_link}}" class="btn btn-primary">See Demo</a>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% if messages %}
+{% for message in messages %}
+<div id="alert" {% if message.tags == 'success' %}
+    style="width: 90%; margin: auto; background-color: #198754; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
+    {% else %}
+    style="width: 90%; margin: auto; background-color: #DC3545; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
+    {% endif %}>
+    <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}ERROR:{% endif %}</strong> <span
+        style="color: white;">{{ message }}</span>
+    <button type="button" onclick="Close()" style="float: right;" class="btn-close" aria-label="Close"><i
+            class="fa-solid fa-times"></i></button>
+</div>
+{% endfor %}
+{% endif %}
+<script>
+    let alert = document.getElementById('alert')
+    if (alert) {
+        function Close() {
+            alert.style.display = 'none';
         }
-    </script>
+        window.onload = () => {
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 2000);
+        }
+    }
+</script>
 </body>
 
 </html>
