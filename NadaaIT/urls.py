@@ -17,12 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from content import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name="home"),
     path('ar',views.index,name="index"),
+    path('contact_ar',views.contact_view_ar,name="contact_view_ar"),
+    path('contact',views.contact_view,name="contact_view"),
     path('subscribe', views.subscribe,name='subscribe'),
     path('contact-us-team', views.contact_detail,name='contactteam'),
     path('contact-us', views.contact_detail,name='contact')
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

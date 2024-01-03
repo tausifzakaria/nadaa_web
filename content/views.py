@@ -27,12 +27,12 @@ def index(request):
     socialmedia = SocialMedia.objects.all()
     services = Services.objects.all()
     context={
+        'services':services,
         'content':content,
         'banner':banner,
         'faq':faq,
         'aboutus':aboutus,
         'socialmedia':socialmedia,
-        'services':services,
     }
     return render(request,"index.html",context)
 
@@ -56,3 +56,25 @@ def subscribe(request):
         data.save()
         messages.success(request,"Thankyou to subscribe our newsletter")
     return redirect(url)
+
+def contact_view(request):
+    services = Services.objects.all()
+    aboutus = AboutUs.objects.all().last()
+    socialmedia = SocialMedia.objects.all()
+    context={
+        'aboutus':aboutus,
+        "socialmedia":socialmedia,
+        'services':services,
+    }
+    return render(request,'contact.html',context)
+
+def contact_view_ar(request):
+    services = Services.objects.all()
+    aboutus = AboutUs.objects.all().last()
+    socialmedia = SocialMedia.objects.all()
+    context={
+        'aboutus':aboutus,
+        "socialmedia":socialmedia,
+        'services':services,
+    }
+    return render(request,'contact_ar.html',context)

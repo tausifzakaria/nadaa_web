@@ -56,7 +56,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   .modal-content {
     width: 100% !important;
     height: auto;
@@ -116,7 +116,7 @@
           navbar-dark
         ">
       <div class="container">
-        <a class="navbar-brand main-logo" href="#">
+        <a class="navbar-brand main-logo" href="{% url 'home' %}">
 
           <img class="logo-light" src='{% static "img/logo-white.png" %}' alt="LOGO" />
           <img class="logo-dark" src='{% static "img/logo.png" %}' alt="LOGO" />
@@ -142,12 +142,26 @@
                 Features
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Servicemodal" rel="noopener">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Services
               </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {% for serv in services %}
+                <li>
+                  <a class="dropdown-item" href="{{serv.demo_link}}" target="_blank">
+                    {% if serv.service_icon %}
+                    <img src="{{serv.service_icon.url}}" width="20" style="aspect-ratio: 1; " class="img-fluid"
+                      alt="icon">
+                    {% endif %}
+                    <span class="p-0 m-0">{{serv.service_name_english}}</span>
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
             </li>
-            
+
             {% comment %} <li class="nav-item">`
               <a class="nav-link" href="#hiw" role="button" aria-expanded="false" id="navbarDropdown3">
                 How It Works
@@ -167,9 +181,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#contactteam" role="button" aria-expanded="false" id="navbarDropdown6">
-                Contact Us
-              </a>
+              <a class="nav-link" href="{% url 'contact_view' %}" >Contact Us</a>
             </li>
           </ul>
           <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
@@ -181,7 +193,7 @@
             </a>
           </div>
           <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
-            <a class="btn btn-warning btn-sm" target="_blank" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            <a class="btn btn-warning btn-sm" href="{% url 'contact_view' %}"
               rel="noopener" href="#price">
               {% comment %} <svg xmlns="https://www.w3.org/2000/svg" class="me-1" width="1.2rem" height="1.2rem"
                 fill="currentColor" viewBox="0 0 512 512">
@@ -1245,7 +1257,7 @@
 
           <!-- APP STORE -->
           <div class="md-4">
-            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
+            <a class="btn btn-warning" href="{% url 'contact_view' %}">Get Started</a>
           </div>
 
         </div>
@@ -1489,7 +1501,7 @@
 
           <!-- APP STORE -->
           <div class="md-4">
-            <a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Get Started</a>
+            <a class="btn btn-warning"  href="{% url 'contact_view' %}">Get Started</a>
           </div>
 
         </div>
@@ -1787,13 +1799,12 @@
               <div class="row">
                 <div class="col-sm-6">
                   <ul class="list-unstyled before-arrow">
-                    <li class="py-2"><a href="#">Home</a></li>
+                    <li class="py-2"><a href="{% url 'home' %}">Home</a></li>
                     <li class="py-2"><a href="#features">Features</a></li>
                     <li class="py-2"><a href="#hiw">How It Works</a></li>
                     <li class="py-2"><a href="#price">Pricing</a></li>
                     <li class="py-2"><a href="#faqs">Faqs</a></li>
-                    <li class="py-2"><a href="#contactteam">Contact Us</a></li>
-                    <li class="py-2"><a href="https://geteazyapp.com/" target="_blank">EazyApp</a></li>
+                    <li class="py-2"><a href="{% url 'contact_view' %}">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
@@ -2031,60 +2042,35 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="Servicemodal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-gradient-primary rounded-0">
-          <h5 class="modal-title text-white" id="serviceModalLabel">Services</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            {% for serv in services %}
-            <div class="col-sm-12 col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  {% if serv.service_icon %}
-                  <img src="{{serv.service_icon.url}}" width="100" class="img-fluid" alt="icon">
-                  {% endif %}
-                  <h5 class="card-title">{{serv.service_name_english}}</h5>
-                  <a href="{{serv.demo_link}}" class="btn btn-primary">See Demo</a>
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
   {% if messages %}
   {% for message in messages %}
-  <div id="alert" {% if message.tags == 'success' %}
+  <div id="alert" 
+    {% if message.tags == 'success' %}
     style="width: 90%; margin: auto; background-color: #198754; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
     {% else %}
     style="width: 90%; margin: auto; background-color: #DC3545; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
     {% endif %}>
-      <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}ERROR:{% endif %}</strong> <span
-          style="color: white;">{{ message }}</span>
-      <button type="button" onclick="Close()" style="float: right;" class="btn-close" aria-label="Close"><i
-              class="fa-solid fa-times"></i></button>
+    <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}ERROR:{% endif %}</strong> <span
+      style="color: white;">{{ message }}</span>
+    <button type="button" onclick="Close()" style="float: right;" class="btn-close" aria-label="Close"><i
+        class="fa-solid fa-times"></i></button>
   </div>
   {% endfor %}
   {% endif %}
   <script>
-      let alert = document.getElementById('alert')
-      if (alert) {
-          function Close() {
-              alert.style.display = 'none';
-          }
-          window.onload = () => {
-              setTimeout(() => {
-                  alert.style.display = 'none';
-              }, 2000);
-          }
+    let alert = document.getElementById('alert')
+    if (alert) {
+      function Close() {
+        alert.style.display = 'none';
       }
-  </script>  
+      window.onload = () => {
+        setTimeout(() => {
+          alert.style.display = 'none';
+        }, 2000);
+      }
+    }
+  </script>
 </body>
 
 </html>

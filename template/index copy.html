@@ -146,7 +146,7 @@
                         </a>
                     </div>
                     <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
-                        <a class="btn btn-warning btn-sm" href="{% url 'contact_view_ar' %}" rel="noopener" href="#price">
+                        <a class="btn btn-warning btn-sm" target="_blank" href="{% url 'contact_view_ar' %}" rel="noopener" href="#price">
                             {% comment %} <svg xmlns="https://www.w3.org/2000/svg" class="me-1" width="1.2rem"
                                 height="1.2rem" fill="currentColor" viewBox="0 0 512 512">
                                 <circle cx="176" cy="416" r="16" style="
@@ -183,52 +183,36 @@
                     </div>
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="{% url 'contact_view_ar' %}" role="button" aria-expanded="false"
+                            <a class="nav-link" href="#contactteam" role="button" aria-expanded="false"
                                 id="navbarDropdown6">
                                 اتصل بنا
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="{% url 'index' %}#faqs" role="button" aria-expanded="false" id="navbarDropdown5">
+                            <a class="nav-link" href="#faqs" role="button" aria-expanded="false" id="navbarDropdown5">
                                 الأسئلة الشائعة
                             </a>
                         </li>
                         <li class="nav-item">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{% url 'index' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                  aria-expanded="false">
-                                  خدمات
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  {% for serv in services %}
-                                  <li>
-                                    <a class="dropdown-item" href="{{serv.demo_link}}" target="_blank">
-                                      {% if serv.service_icon %}
-                                      <img src="{{serv.service_icon.url}}" width="20" style="aspect-ratio: 1; " class="img-fluid"
-                                        alt="icon">
-                                      {% endif %}
-                                      <span class="p-0 m-0">{{serv.service_name_arabic}}</span>
-                                    </a>
-                                  </li>
-                                  {% endfor %}
-                                </ul>
-                              </li>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Servicemodal" rel="noopener">
+                                خدمات
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}#features" role="button" aria-expanded="false"
+                            <a class="nav-link" href="#features" role="button" aria-expanded="false"
                                 id="navbarDropdown2">
                                 سمات
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}#top" role="button" aria-expanded="false" id="navbarDropdown1">
+                            <a class="nav-link" href="#top" role="button" aria-expanded="false" id="navbarDropdown1">
                                 بيت
                             </a>
                         </li>                        
                     </ul>
 
                 </div>
-                <a class="navbar-brand main-logo ms-5" href="{% url 'index' %}">
+                <a class="navbar-brand main-logo" href="{% url 'home' %}">
                     <img class="logo-light" src='{% static "img/logo-white.png" %}' alt="LOGO" />
                     <img class="logo-dark" src='{% static "img/logo.png" %}' alt="LOGO" />
                 </a>
@@ -1874,7 +1858,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled before-arrow">
-                                        <li class="py-2"><a href="{% url 'index' %}">بيت</a></li>
+                                        <li class="py-2"><a href="{% url 'home' %}">بيت</a></li>
                                         <li class="py-2"><a href="#features">سمات</a></li>
                                         <li class="py-2"><a href="#hiw">كيف تعمل</a></li>
                                         <li class="py-2"><a href="#price">التسعير</a></li>
