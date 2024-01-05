@@ -144,7 +144,7 @@
                 <!-- collapse menu -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo">
                     <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
-                        <a class="btn btn-warning btn-sm" href="{% url 'index' %}">
+                        <a class="btn btn-warning btn-sm" href="{% url 'contact_view' %}">
                             English <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20"
                                 viewBox="0 0 640 512">
                                 <path
@@ -191,13 +191,13 @@
                     </div>
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#contactteam" role="button" aria-expanded="false"
+                            <a class="nav-link" href="{% url 'contact_view_ar' %}" role="button" aria-expanded="false"
                                 id="navbarDropdown6">
                                 اتصل بنا
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#faqs" role="button" aria-expanded="false" id="navbarDropdown5">
+                            <a class="nav-link" href="{% url 'index' %}#faqs" role="button" aria-expanded="false" id="navbarDropdown5">
                                 الأسئلة الشائعة
                             </a>
                         </li>
@@ -223,13 +223,13 @@
                               </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features" role="button" aria-expanded="false"
+                            <a class="nav-link" href="{% url 'index' %}#features" role="button" aria-expanded="false"
                                 id="navbarDropdown2">
                                 سمات
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#top" role="button" aria-expanded="false" id="navbarDropdown1">
+                            <a class="nav-link" href="{% url 'index' %}" role="button" aria-expanded="false" id="navbarDropdown1">
                                 بيت
                             </a>
                         </li>
