@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html>
 {% load static %}
 
 
@@ -115,7 +115,7 @@
           fixed-top
           navbar-dark
         ">
-      <div class="container">
+      <div class="container-fluid px-4">
         <a class="navbar-brand main-logo" href="{% url 'home' %}">
 
           <img class="logo-light" src='{% static "img/logo-white.png" %}' alt="LOGO" />
@@ -130,21 +130,17 @@
 
         <!-- collapse menu -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo">
-          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+            {% for link in navlist %}
             <li class="nav-item">
-              <a class="nav-link" href="#top" role="button" aria-expanded="false" id="navbarDropdown1">
-                Home
+              <a class="nav-link" href="{{link.navigation_name_english_link}}" role="button" aria-expanded="false" id="navbarDropdown1">
+                {{link.navigation_name_english}}
               </a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#features" role="button" aria-expanded="false" id="navbarDropdown2">
-                Features
-              </a>
-            </li>
+            {% endfor %}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Services
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -161,28 +157,6 @@
                 {% endfor %}
               </ul>
             </li>
-
-            {% comment %} <li class="nav-item">`
-              <a class="nav-link" href="#hiw" role="button" aria-expanded="false" id="navbarDropdown3">
-                How It Works
-              </a>
-            </li> {% endcomment %}
-
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link" href="#price" role="button" aria-expanded="false" id="navbarDropdown4">
-                Pricing
-              </a>
-            </li> -->
-
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#faqs" role="button" aria-expanded="false" id="navbarDropdown5">
-                FAQs
-              </a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="{% url 'contact_view' %}" >Contact Us</a>
-            </li>
           </ul>
           <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
             <a class="btn btn-warning btn-sm" href="{% url 'index' %}">
@@ -193,8 +167,7 @@
             </a>
           </div>
           <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
-            <a class="btn btn-warning btn-sm" href="{% url 'contact_view' %}"
-              rel="noopener" href="#price">
+            <a class="btn btn-warning btn-sm" href="{% url 'contact_view' %}" rel="noopener" href="#price">
               {% comment %} <svg xmlns="https://www.w3.org/2000/svg" class="me-1" width="1.2rem" height="1.2rem"
                 fill="currentColor" viewBox="0 0 512 512">
                 <circle cx="176" cy="416" r="16" style="
@@ -1501,7 +1474,7 @@
 
           <!-- APP STORE -->
           <div class="md-4">
-            <a class="btn btn-warning"  href="{% url 'contact_view' %}">Get Started</a>
+            <a class="btn btn-warning" href="{% url 'contact_view' %}">Get Started</a>
           </div>
 
         </div>
@@ -1949,104 +1922,10 @@
   <!-- Theme js -->
   <script src='{% static "src/js/theme.js" %}'></script>
 
-  <!-- JS Optimize -->
-  <!-- <script src="dist/js/bundle.min.js" %}'></script> -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-gradient-primary rounded-0">
-          <h5 class="modal-title text-white" id="exampleModalLabel">Contact Us</h5>
-        </div>
-        <div class="modal-body">
-          <div class="widget col-md-12 col-lg-12" id=''>
-            <!-- Footer Content -->
-            <div class="widget-content">
-              <!-- Footer Title -->
-              <div class="col-lg-16 ps-lg-0 mt-5 mt-lg-0" data-aos="fade-left">
-                <div class="w-100">
-                  <!-- contact form -->
-                  <form action="{% url 'contactteam' %}" method="POST" class="contact-form">
-                    {% csrf_token %}
-                    <div class="row">
-                      <div class="col-md-6 mb-4">
-                        <input type="text" required name="name" placeholder='Enter Your Name' class="form-control"
-                          id="name" />
-                        <div class="validate"></div>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                        <input type="text" required class="form-control" placeholder='Enter Your Phone No.' name="phone"
-                          id="subject" />
-                        <div class="validate"></div>
-                      </div>
-                    </div>
-                    <div class="mb-4">
-                      <input type="email" required class="form-control" placeholder='Enter Your Email Address'
-                        name="email" id="email" />
-                      <div class="validate"></div>
-                    </div>
-                    <div class="mb-4">
-                      <textarea class="form-control" name="message" placeholder='Enter Your Message' rows="4" required
-                        id="messages"></textarea>
-                      <div class="validate"></div>
-                    </div>
-                    <!-- end contact form -->
-                </div>
-              </div>
-
-              <div class="my-1"></div>
-
-            </div>
-            <!-- End Footer Content -->
-          </div>
-        </div>
-        <div class="modal-footer">
-          <div class="text-center mb-4">
-            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
-                viewBox="0 0 512 512">
-                <line x1="368" y1="368" x2="144" y2="144"
-                  style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                <line x1="368" y1="144" x2="144" y2="368"
-                  style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-              </svg>
-              Close
-            </button>
-          </div>
-
-          <div class="text-center mb-4">
-            <button class="btn btn-primary" type="submit">
-              <svg xmlns="https://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
-                class="me-2 rtl-270" viewBox="0 0 512 512">
-                <path
-                  d="M53.12,199.94l400-151.39a8,8,0,0,1,10.33,10.33l-151.39,400a8,8,0,0,1-15-.34L229.66,292.45a16,16,0,0,0-10.11-10.11L53.46,215A8,8,0,0,1,53.12,199.94Z"
-                  style="
-                      fill: none;
-                      stroke: currentColor;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-width: 32px;
-                    "></path>
-                <line x1="460" y1="52" x2="227" y2="285" style="
-                      fill: none;
-                      stroke: currentColor;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-width: 32px;
-                    "></line>
-              </svg>
-              Submit Now
-            </button>
-          </div>
-        </div>
-        </form>
-      </div>
-    </div>
-  </div>
 
   {% if messages %}
   {% for message in messages %}
-  <div id="alert" 
-    {% if message.tags == 'success' %}
+  <div id="alert" {% if message.tags == 'success' %}
     style="width: 90%; margin: auto; background-color: #198754; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
     {% else %}
     style="width: 90%; margin: auto; background-color: #DC3545; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"

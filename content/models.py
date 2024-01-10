@@ -61,3 +61,12 @@ class Services(models.Model):
     service_name_arabic = models.CharField(max_length=50)
     service_icon = models.FileField(upload_to='Service Icon',null=True,blank=True)
     demo_link = models.URLField(max_length=200)
+
+class ImageGallery(models.Model):
+    image = models.FileField(upload_to='Image Gallery',null=True,blank=True)
+
+class Navigation(models.Model):
+    navigation_name_english = models.CharField(max_length=50)
+    navigation_name_english_link = models.CharField(max_length=750)
+    navigation_name_arabic = models.CharField(max_length=50)
+    navigation_name_arabic_link = models.CharField(max_length=750)

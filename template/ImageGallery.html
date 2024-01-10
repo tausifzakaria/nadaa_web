@@ -2,37 +2,49 @@
 <html lang="ar">
 {% load static %}
 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <!-- Title  -->
     <title>Nadaa | Information Technology
     </title>
     <meta name="description" content="Nadaa For Information Technology" />
+
     <!--Plugins Styles-->
     {% comment %}
     <link rel="stylesheet" href='{% static "src/plugins/aos/dist/aos.css" %}' /> {% endcomment %}
     <link rel="stylesheet" href='{% static "src/plugins/lightgallery.js/dist/css/lightgallery.min.css" %}' />
     {% comment %}
     <link rel="stylesheet" href='{% static "src/plugins/flickity/dist/flickity.min.css" %}' /> {% endcomment %}
+
     <!--Styles-->
     <link rel="stylesheet" href='{% static "src/css/theme.css" %}' />
+
     <!-- Css Optimize -->
+
     <!-- PWA Optimize -->
     <link rel="manifest" href="{% static 'src/js/pwa/manifest.json' %}" />
+
     <meta name="theme-color" content="#5b2be0" />
     <link rel="apple-touch-icon" href='{% static "img/logo-white.png" %}' />
+
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+
     <!-- Favicon  -->
     <link rel="icon" href='{% static "img/icon.png" %}' />
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-70CK5Q0F1Z"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-70CK5Q0F1Z');
     </script>
 </head>
@@ -60,6 +72,7 @@
             <span class="skiplink-text">Skip to main content</span>
         </div>
     </a>
+
     <div class="d-block d-md-none mobile-fixed-box fixed-bottom">
         <div class="row align-items-center mb-n1">
             <div class="col col-6 btn btn-success border px-2 py-3" style="background: #5bbc2e; text-align: center;">
@@ -70,7 +83,7 @@
                         style="fill-rule:evenodd" />
                 </svg>
                 <a alt='{{title}}'
-                    href=http://wa.me/+919833664934?text=Hi%20There,%0AI%20saw%20NadaaIT%20website%20and%20want%20to%20know%20more%20about%20it
+                    href=http://wa.me/+966533173400?text=Hi%20There,%0AI%20saw%20NadaaIT%20website%20and%20want%20to%20know%20more%20about%20it
                     id="Site Visit" class="cta-link text-center text-white icon-a"><span><i
                             class="fab fa-whatsapp fa-lg "></i>
                         WhatsApp</span></a>
@@ -82,7 +95,7 @@
                         d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z"
                         style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px" />
                 </svg>
-                <a alt='{{title}}' href="tel:9833664934/" id="Site Visit" class="cta-link text-white"
+                <a alt='{{title}}' href="tel:966533173400/" id="Site Visit" class="cta-link text-white"
                     title="Request a Site Visit"> 7700909295</a>
             </div>
         </div>
@@ -93,6 +106,7 @@
             <span class="progress-bar"></span>
         </span>
     </progress>
+
     <!-- ========== { HEADER }==========  -->
     <header>
         <!-- Navbar -->
@@ -101,19 +115,23 @@
           navbar navbar-expand-lg
           hover-navbar
           light-to-dark
+          fixed-top
           navbar-dark
         ">
             <div class="container-fluid px-4">
                 <a class="navbar-brand main-logo" href="{% url 'home' %}">
+
                     <img class="logo-light" src='{% static "img/logo-white.png" %}' alt="LOGO" />
                     <img class="logo-dark" src='{% static "img/logo.png" %}' alt="LOGO" />
                 </a>
+
                 <!-- navbar toggler -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <!-- collapse menu -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo">
                     <ul class="navbar-nav m-auto mt-2 mt-lg-0">
@@ -145,7 +163,7 @@
                         </li>
                     </ul>
                     <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
-                        <a class="btn btn-warning btn-sm" href="{% url 'contact_view_ar' %}">
+                        <a class="btn btn-warning btn-sm" href="{% url 'Image_gallery_ar' %}">
                             Arabic <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512">
                                 <path
                                     d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z" />
@@ -153,8 +171,7 @@
                         </a>
                     </div>
                     <div class="d-grid d-lg-block my-3 my-lg-0 ms-0 ms-lg-4">
-                        <a class="btn btn-warning btn-sm" target="_blank" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" rel="noopener" href="#price">
+                        <a class="btn btn-warning btn-sm" href="{% url 'contact_view' %}" rel="noopener" href="#price">
                             {% comment %} <svg xmlns="https://www.w3.org/2000/svg" class="me-1" width="1.2rem"
                                 height="1.2rem" fill="currentColor" viewBox="0 0 512 512">
                                 <circle cx="176" cy="416" r="16" style="
@@ -196,65 +213,22 @@
         <!-- End Navbar -->
     </header>
     <!-- end header -->
+
     <!-- =========={ MAIN }==========  -->
-    <main id="content mt-5">
-        <div class="col-lg-16 ps-lg-0 mt-5 mt-lg-0" data-aos="fade-left">
-            <div class="w-100 my-5 container">
-                <!-- contact form -->
-                <form action="{% url 'contactteam' %}" method="POST" class="contact-form w-50 m-auto shadow-sm p-4">
-                    {% csrf_token %}
-                    <h4>Contat Us</h4>
-                    <div class="row">
-                        <div class="mb-4">
-                            <input type="text" required name="name" placeholder='Enter Your Name' class="form-control"
-                                id="name" />
-                            <div class="validate"></div>
-                        </div>
-                        <div class="mb-4">
-                            <input type="text" required class="form-control" placeholder='Enter Your Phone No.'
-                                name="phone" id="subject" />
-                            <div class="validate"></div>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <input type="email" required class="form-control" placeholder='Enter Your Email Address'
-                            name="email" id="email" />
-                        <div class="validate"></div>
-                    </div>
-                    <div class="mb-4">
-                        <textarea class="form-control" name="message" placeholder='Enter Your Message' rows="4" required
-                            id="messages"></textarea>
-                        <div class="validate"></div>
-                    </div>
-                    <div class="text-end">
-                        <button class="btn btn-primary" type="submit">
-                            <svg xmlns="https://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
-                              class="me-2 rtl-270" viewBox="0 0 512 512">
-                              <path
-                                d="M53.12,199.94l400-151.39a8,8,0,0,1,10.33,10.33l-151.39,400a8,8,0,0,1-15-.34L229.66,292.45a16,16,0,0,0-10.11-10.11L53.46,215A8,8,0,0,1,53.12,199.94Z"
-                                style="
-                                    fill: none;
-                                    stroke: currentColor;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                    stroke-width: 32px;
-                                  "></path>
-                              <line x1="460" y1="52" x2="227" y2="285" style="
-                                    fill: none;
-                                    stroke: currentColor;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                    stroke-width: 32px;
-                                  "></line>
-                            </svg>
-                            Submit Now
-                          </button>
-                    </div>
-                </form>
+    <main id="content">
+        <div class="my-5 container">
+            <h1 class="mt-5 text-center border-bottom pb-2 pt-5">Image Gallery</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 my-2 justify-content-between">
+                {% for i in img  %}
+                <div class="col card shadow-sm p-0 rounded-3 overflow-hidden mx-2" style="max-width:24rem;">
+                    <img src="{{i.image.url}}" class="img-fluid" alt="gallery" style="height:200px;aspect-ratio:1;object-position:center center; object-fit:cover;">
+                </div>
+                {% endfor %}
             </div>
         </div>
     </main>
 
+    <!-- =========={ FOOTER }==========  -->
     <footer class="bg-secondary">
         <!--Footer content-->
         <div id="footer" class="footer-dark section pt-6 pb-5">
@@ -277,19 +251,19 @@
                                         <path fill="currentColor"
                                             d="M256,48c-79.5,0-144,61.39-144,137,0,87,96,224.87,131.25,272.49a15.77,15.77,0,0,0,25.5,0C304,409.89,400,272.07,400,185,400,109.39,335.5,48,256,48Z"
                                             style="
-                              fill: none;
-                              stroke: currentColor;
-                              stroke-linecap: round;
-                              stroke-linejoin: round;
-                              stroke-width: 32px;
-                            " />
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
                                         <circle fill="currentColor" cx="256" cy="192" r="48" style="
-                              fill: none;
-                              stroke: currentColor;
-                              stroke-linecap: round;
-                              stroke-linejoin: round;
-                              stroke-width: 32px;
-                            " />
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
                                     </svg>
                                     {{aboutus.location}}
                                 </address>
@@ -300,11 +274,11 @@
                                         <path fill="currentColor"
                                             d="M451,374c-15.88-16-54.34-39.35-73-48.76C353.7,313,351.7,312,332.6,326.19c-12.74,9.47-21.21,17.93-36.12,14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48,5.41-23.23,14.79-36c13.22-18,12.22-21,.92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9,44,119.9,47,108.83,51.6A160.15,160.15,0,0,0,83,65.37C67,76,58.12,84.83,51.91,98.1s-9,44.38,23.07,102.64,54.57,88.05,101.14,134.49S258.5,406.64,310.85,436c64.76,36.27,89.6,29.2,102.91,23s22.18-15,32.83-31a159.09,159.09,0,0,0,13.8-25.8C465,391.17,468,391.17,451,374Z"
                                             style="
-                              fill: none;
-                              stroke: currentColor;
-                              stroke-miterlimit: 10;
-                              stroke-width: 32px;
-                            " />
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-miterlimit: 10;
+                          stroke-width: 32px;
+                        " />
                                     </svg>
                                     Call Us:
                                     <a class='footer-info' href="tel:7700 90 92 95">{{aboutus.contact_no}}</a>
@@ -315,19 +289,19 @@
                                         viewBox="0 0 512 512">
                                         <rect fill="currentColor" x="48" y="96" width="416" height="320" rx="40" ry="40"
                                             style="
-                              fill: none;
-                              stroke: currentColor;
-                              stroke-linecap: round;
-                              stroke-linejoin: round;
-                              stroke-width: 32px;
-                            " />
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
                                         <polyline fill="currentColor" points="112 160 256 272 400 160" style="
-                              fill: none;
-                              stroke: currentColor;
-                              stroke-linecap: round;
-                              stroke-linejoin: round;
-                              stroke-width: 32px;
-                            " />
+                          fill: none;
+                          stroke: currentColor;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 32px;
+                        " />
                                     </svg>
                                     {{aboutus.email}}
                                 </p>
@@ -365,6 +339,7 @@
                             <!--end instagram-->
                         </ul>
                     </div>
+
                     <!-- center widget -->
                     <div class="footer-links col-md-6 col-lg-3">
                         <!-- Footer Content -->
@@ -385,6 +360,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- right -->
                     <div class="widget col-md-6 col-lg-4" id='contactteam'>
                         <!-- Footer Content -->
@@ -427,19 +403,19 @@
                                                     <path
                                                         d="M53.12,199.94l400-151.39a8,8,0,0,1,10.33,10.33l-151.39,400a8,8,0,0,1-15-.34L229.66,292.45a16,16,0,0,0-10.11-10.11L53.46,215A8,8,0,0,1,53.12,199.94Z"
                                                         style="
-                                    fill: none;
-                                    stroke: currentColor;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                    stroke-width: 32px;
-                                  "></path>
+                                fill: none;
+                                stroke: currentColor;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-width: 32px;
+                              "></path>
                                                     <line x1="460" y1="52" x2="227" y2="285" style="
-                                    fill: none;
-                                    stroke: currentColor;
-                                    stroke-linecap: round;
-                                    stroke-linejoin: round;
-                                    stroke-width: 32px;
-                                  "></line>
+                                fill: none;
+                                stroke: currentColor;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-width: 32px;
+                              "></line>
                                                 </svg>
                                                 Send Message
                                             </button>
@@ -448,7 +424,9 @@
                                     <!-- end contact form -->
                                 </div>
                             </div>
+
                             <div class="my-1"></div>
+
                         </div>
                         <!-- End Footer Content -->
                     </div>
@@ -457,6 +435,7 @@
             </div>
         </div>
         <!--End footer content-->
+
         <!--Start footer copyright-->
         <div class="footer-dark">
             <div class="container py-4 border-top border-smooth">
@@ -469,9 +448,11 @@
                 </div>
             </div>
             <!-- Modal -->
+
             <!--End footer copyright-->
     </footer>
     <!-- End Footer -->
+
     <!-- =========={ SCROLL TO TOP }==========  -->
     <a href="#top" class="p-3 border position-fixed end-1 bottom-1 z-index-10 back-top" title="Scroll To Top">
         <!-- <i class="fas fa-arrow-up"></i> -->
@@ -488,15 +469,18 @@
     <!-- =========={ JAVASCRIPT }==========  -->
     <!-- Popper and Bootstrap js -->
     <script src='{% static "src/plugins/bootstrap/dist/js/bootstrap.bundle.min.js" %}'></script>
+
     <!-- Plugin js -->
     <script src='{% static "src/plugins/jarallax/dist/jarallax.min.js" %}'></script>
     {% comment %}
     <script src='{% static "src/plugins/jarallax/dist/jarallax-video.min.js" %}'></script> {% endcomment %}
+
     {% comment %}
     <script src='{% static "src/plugins/lightgallery.js/dist/js/lightgallery.min.js" %}'></script> {% endcomment %}
     {% comment %}
     <script src='{% static "src/plugins/lightgallery.js/demo/js/lg-thumbnail.min.js" %}'></script>
     <script src='{% static "src/plugins/lightgallery.js/demo/js/lg-video.js" %}'></script> {% endcomment %}
+
     {% comment %}
     <script src='{% static "src/plugins/aos/dist/aos.js" %}'></script> {% endcomment %}
     {% comment %}
@@ -516,36 +500,131 @@
     <script src='{% static "src/plugins/vanilla-lazyload/dist/lazyload.min.js" %}'></script> {% endcomment %}
     {% comment %}
     <script src='{% static "src/plugins/hc-sticky/dist/hc-sticky.js" %}'></script> {% endcomment %}
+
     <!-- Theme js -->
     <script src='{% static "src/js/theme.js" %}'></script>
-    {% if messages %}
-  {% for message in messages %}
-  <div id="alert" 
-    {% if message.tags == 'success' %}
-    style="width: 90%; margin: auto; background-color: #198754; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
-    {% else %}
-    style="width: 90%; margin: auto; background-color: #DC3545; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
-    {% endif %}>
-    <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}ERROR:{% endif %}</strong> <span
-      style="color: white;">{{ message }}</span>
-    <button type="button" onclick="Close()" style="float: right;" class="btn-close" aria-label="Close"><i
-        class="fa-solid fa-times"></i></button>
-  </div>
-  {% endfor %}
-  {% endif %}
-  <script>
-    let alert = document.getElementById('alert')
-    if (alert) {
-      function Close() {
-        alert.style.display = 'none';
-      }
-      window.onload = () => {
-        setTimeout(() => {
-          alert.style.display = 'none';
-        }, 2000);
-      }
-    }
-  </script> 
-</body>
 
+    <!-- JS Optimize -->
+    <!-- <script src="dist/js/bundle.min.js" %}'></script> -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-primary rounded-0">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Contact Us</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="widget col-md-12 col-lg-12" id=''>
+                        <!-- Footer Content -->
+                        <div class="widget-content">
+                            <!-- Footer Title -->
+                            <div class="col-lg-16 ps-lg-0 mt-5 mt-lg-0" data-aos="fade-left">
+                                <div class="w-100">
+                                    <!-- contact form -->
+                                    <form action="{% url 'contactteam' %}" method="POST" class="contact-form">
+                                        {% csrf_token %}
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <input type="text" required name="name" placeholder='Enter Your Name'
+                                                    class="form-control" id="name" />
+                                                <div class="validate"></div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <input type="text" required class="form-control"
+                                                    placeholder='Enter Your Phone No.' name="phone" id="subject" />
+                                                <div class="validate"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <input type="email" required class="form-control"
+                                                placeholder='Enter Your Email Address' name="email" id="email" />
+                                            <div class="validate"></div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <textarea class="form-control" name="message"
+                                                placeholder='Enter Your Message' rows="4" required
+                                                id="messages"></textarea>
+                                            <div class="validate"></div>
+                                        </div>
+                                        <!-- end contact form -->
+                                </div>
+                            </div>
+
+                            <div class="my-1"></div>
+
+                        </div>
+                        <!-- End Footer Content -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center mb-4">
+                        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                                viewBox="0 0 512 512">
+                                <line x1="368" y1="368" x2="144" y2="144"
+                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                <line x1="368" y1="144" x2="144" y2="368"
+                                    style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                            </svg>
+                            Close
+                        </button>
+                    </div>
+
+                    <div class="text-center mb-4">
+                        <button class="btn btn-primary" type="submit">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor"
+                                class="me-2 rtl-270" viewBox="0 0 512 512">
+                                <path
+                                    d="M53.12,199.94l400-151.39a8,8,0,0,1,10.33,10.33l-151.39,400a8,8,0,0,1-15-.34L229.66,292.45a16,16,0,0,0-10.11-10.11L53.46,215A8,8,0,0,1,53.12,199.94Z"
+                                    style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "></path>
+                                <line x1="460" y1="52" x2="227" y2="285" style="
+                      fill: none;
+                      stroke: currentColor;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 32px;
+                    "></line>
+                            </svg>
+                            Submit Now
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% if messages %}
+    {% for message in messages %}
+    <div id="alert" {% if message.tags == 'success' %}
+        style="width: 90%; margin: auto; background-color: #198754; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
+        {% else %}
+        style="width: 90%; margin: auto; background-color: #DC3545; color: white; border: 1px solid; border-radius: 12px; box-shadow: 0 0 5px lightgray; padding: 1%;    z-index: 10000;position: absolute;top: 1%;left: 5%;"
+        {% endif %}>
+        <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}ERROR:{% endif %}</strong> <span
+            style="color: white;">{{ message }}</span>
+        <button type="button" onclick="Close()" style="float: right;" class="btn-close" aria-label="Close"><i
+                class="fa-solid fa-times"></i></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <script>
+        let alert = document.getElementById('alert')
+        if (alert) {
+            function Close() {
+                alert.style.display = 'none';
+            }
+            window.onload = () => {
+                setTimeout(() => {
+                    alert.style.display = 'none';
+                }, 2000);
+            }
+        }
+    </script>
+</body>
 </html>

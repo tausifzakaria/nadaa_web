@@ -9,6 +9,7 @@ def home(request):
     aboutus = AboutUs.objects.all().last()
     socialmedia = SocialMedia.objects.all()
     services = Services.objects.all()
+    navlist = Navigation.objects.all()
     context={
         'content':content,
         'banner':banner,
@@ -16,6 +17,7 @@ def home(request):
         'aboutus':aboutus,
         'socialmedia':socialmedia,
         'services':services,
+    'navlist':navlist,
     }
     return render(request,"home.html",context)
 
@@ -26,6 +28,7 @@ def index(request):
     aboutus = AboutUs.objects.all().last()
     socialmedia = SocialMedia.objects.all()
     services = Services.objects.all()
+    navlist = Navigation.objects.all().order_by("-id")
     context={
         'services':services,
         'content':content,
@@ -33,6 +36,7 @@ def index(request):
         'faq':faq,
         'aboutus':aboutus,
         'socialmedia':socialmedia,
+        'navlist':navlist,
     }
     return render(request,"index.html",context)
 
@@ -61,10 +65,12 @@ def contact_view(request):
     services = Services.objects.all()
     aboutus = AboutUs.objects.all().last()
     socialmedia = SocialMedia.objects.all()
+    navlist = Navigation.objects.all()
     context={
         'aboutus':aboutus,
         "socialmedia":socialmedia,
         'services':services,
+        'navlist':navlist,
     }
     return render(request,'contact.html',context)
 
@@ -72,9 +78,41 @@ def contact_view_ar(request):
     services = Services.objects.all()
     aboutus = AboutUs.objects.all().last()
     socialmedia = SocialMedia.objects.all()
+    navlist = Navigation.objects.all().order_by("-id")
     context={
         'aboutus':aboutus,
         "socialmedia":socialmedia,
         'services':services,
+        'navlist':navlist,
     }
     return render(request,'contact_ar.html',context)
+
+def Image_gallery(request):
+    services = Services.objects.all()
+    aboutus = AboutUs.objects.all().last()
+    socialmedia = SocialMedia.objects.all()
+    img = ImageGallery.objects.all()
+    navlist = Navigation.objects.all()
+    context={
+        'aboutus':aboutus,
+        "socialmedia":socialmedia,
+        'services':services,
+        'img':img,
+        'navlist':navlist,
+    }
+    return render(request,'ImageGallery.html',context)
+
+def Image_gallery_ar(request):
+    services = Services.objects.all()
+    aboutus = AboutUs.objects.all().last()
+    socialmedia = SocialMedia.objects.all()
+    img = ImageGallery.objects.all()
+    navlist = Navigation.objects.all().order_by("-id")
+    context={
+        'aboutus':aboutus,
+        "socialmedia":socialmedia,
+        'services':services,
+        'img':img,
+        'navlist':navlist,
+    }
+    return render(request,'ImageGallery_ar.html',context)
